@@ -1,0 +1,33 @@
+.homePage .banner1 {
+  min-height: 650px;
+  background: url(../../assets/images/aboutBanner.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+}
+.homePage .banner1 h1 {
+  font-size: 70px;
+  color: #fff;
+  margin: auto;
+  text-align: center;
+}
+.homePage .aboutUsSec {
+  padding: 80px 0;
+}
+.homePage .sHeading {
+  position: relative;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.biopic {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.bio {
+  margin-bottom: 50px;
+}

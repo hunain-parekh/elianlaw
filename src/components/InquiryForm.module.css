@@ -1,0 +1,68 @@
+.quickConSec {
+  padding-bottom: 60px;
+  padding-top: 20px;
+}
+.quickConSec .inquiryForm {
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  width: 100%;
+  padding: 16px;
+  display: block;
+}
+.quickConSec .inquiryForm {
+  padding: 30px;
+  width: 100%;
+}
+.quickConSec .inquiryForm .title {
+  color: #000;
+  text-align: center;
+  /* font-family: Montserrat; */
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.quickConSec .inquiryForm input:focus {
+  box-shadow: none;
+}
+.quickConSec .inquiryForm input::placeholder {
+  color: rgba(0, 0, 0, 0.19);
+}
+/* .planPage .quickConSec .inquiryForm select:not():checked {
+    
+    color: rgba(0, 0, 0, 0.19);
+  } */
+.quickConSec .inquiryForm input,
+.quickConSec .inquiryForm textarea,
+.quickConSec .inquiryForm select {
+  border-radius: 0px;
+  background: rgba(217, 217, 217, 0.47);
+  color: rgba(0, 0, 0, 0.9);
+  /* font-family: Inter; */
+  font-size: 15px;
+  border: none;
+  margin-bottom: 20px;
+}
+.inquiryForm button {
+  border-radius: 0px;
+  background: #000;
+  border: 2px solid #000;
+  color: #fff;
+  width: 100%;
+  padding: 4px;
+  text-align: center;
+  transition: all 0.3s;
+}
+.quickConSec h1 {
+  font-size: 70px;
+  font-weight: bold;
+  text-align: center;
+}
+.inquiryForm button:hover {
+  background: #fff;
+  color: #000;
+  transition: all 0.3s;
+}
+.ai_center {
+  align-items: center;
+}
