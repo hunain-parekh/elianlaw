@@ -1,2 +1,1066 @@
 /* styles/globals.css */
-@import 'bootstrap/dist/css/bootstrap.min.css';
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+@font-face {
+  font-family: Inter;
+  src: url(../assets/font/Inter/static/Inter-Regular.ttf);
+}
+html {
+  scroll-behavior: auto !important;
+}
+.navbar .navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar .nav-link {
+  position: relative;
+  color: rgba(0, 0, 0, 0.45);
+  font-family: Inter;
+  font-size: 23px;
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+}
+.navbar .nav-link:hover {
+  color: black;
+}
+.navbar .navbar-brand {
+  color: #000;
+  font-family: Inter;
+  font-size: 30px;
+}
+.planPage .banner {
+  height: 380px;
+  background: url(../assets/images/img3.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.planPage.immigration .banner {
+  background: url(../assets/images/img5.jpg);
+}
+
+.planPage .banner h1 {
+  color: #fff;
+  font-size: 55px;
+  font-weight: 600;
+}
+.planPage .sec1 {
+  padding: 80px 0;
+}
+.planPage .sec1 .content p {
+  color: #000;
+  text-align: justify;
+  /* font-family: Montserrat; */
+  font-size: 20px;
+}
+
+footer .logo {
+  color: #fff;
+  /* font-family: Montserrat; */
+  font-size: 35px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+footer h5 {
+  font-size: 25px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+footer .mainFooter ul li a:hover {
+  opacity: 1;
+}
+footer .mainFooter ul li a {
+  color: #fff;
+  font-size: 22px;
+  text-decoration: none;
+  opacity: 0.7;
+}
+footer .mainFooter {
+  background: url(../assets/images/img2.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 40px 0;
+}
+footer .miniFooter {
+  background: #d9d9d9;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+}
+.planPage .sec2 {
+  padding: 50px 0;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.heading {
+  color: #000;
+  /* font-family: Montserrat; */
+  font-size: 38px;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.planPage .sec2 .heading {
+  color: #000;
+  /* font-family: Montserrat; */
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.planPage .sec2 .row {
+  align-items: flex-end;
+}
+.planPage .sec2 .offMain {
+  border-radius: 20px;
+  background: #000;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 16px;
+  height: 100%;
+}
+.planPage .sec2 .offMain .text {
+  color: #fff;
+  /* font-family: Montserrat; */
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 30px;
+}
+.planPage .sec2 .offMain .imgDiv {
+  max-width: 80%;
+  margin: auto;
+}
+.planPage .sec2 .formMain {
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  width: 100%;
+  padding: 16px;
+}
+.planPage .sec2 .formMain .col1 {
+  padding: 30px;
+  width: 100%;
+}
+.planPage .sec2 .formMain .col1 .title {
+  color: #000;
+  text-align: center;
+  /* font-family: Montserrat; */
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.planPage .sec2 .formMain .col1 input:focus {
+  box-shadow: none;
+}
+.planPage .sec2 .formMain .col1 input::placeholder {
+  color: rgba(0, 0, 0, 0.19);
+}
+.planPage .sec2 .formMain .col1 input {
+  border-radius: 20px;
+  background: rgba(217, 217, 217, 0.47);
+  color: rgba(0, 0, 0, 0.9);
+  /* font-family: Inter; */
+  font-size: 15px;
+  border: none;
+  margin-bottom: 20px;
+}
+.planPage .sec2 .formMain .col1 button {
+  border-radius: 20px;
+  background: #000;
+  border: 2px solid #000;
+  color: #fff;
+  width: 100%;
+  padding: 4px;
+  text-align: center;
+  transition: all 0.3s;
+}
+.planPage .sec2 .formMain .col1 button:hover {
+  background: #fff;
+  color: #000;
+  transition: all 0.3s;
+}
+.planPage .dateSec {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 40px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.planPage .dateSec .head {
+  color: #000;
+  /* font-family: Montserrat; */
+  font-size: 33px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.planPage .dateSec .timeMain .timeSelect {
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+.planPage .dateSec .timeMain .timeSelect button.active {
+  background: #000;
+  color: #fff;
+}
+.planPage .dateSec .timeMain .timeSelect button {
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #000;
+  /* font-family: Montserrat; */
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  padding: 8px 30px;
+  border: none;
+}
+.planPage .dateSec .timeMain .makePay:hover {
+  opacity: 0.8;
+}
+.planPage .dateSec .timeMain .makePay {
+  display: block;
+  text-decoration: none;
+  border-radius: 5px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  /* font-family: Montserrat; */
+  font-size: 16px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.planPage .immigrationPlanSec {
+  padding: 50px 0;
+  max-width: 1100px;
+  margin: auto;
+}
+.planPage .immigrationPlanSec .head {
+  color: #000;
+  text-align: center;
+  /* font-family: Montserrat; */
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.planPage .immigrationPlanSec .plan:hover {
+  box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s;
+  top: -10px;
+}
+.planPage .immigrationPlanSec .plan {
+  transition: all 0.3s;
+  position: relative;
+  top: 0;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 20px 16px;
+  text-align: center;
+  max-width: 230px;
+  margin: auto;
+  height: 100%;
+  cursor: pointer;
+}
+.planPage .immigrationPlanSec .plan .icon img {
+  max-height: 100%;
+}
+.planPage .immigrationPlanSec .plan .icon {
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.planPage .immigrationPlanSec .plan .title {
+  color: #000;
+  text-align: center;
+  /* font-family: Montserrat; */
+  font-size: 26px;
+  margin-top: 12px;
+}
+.navbar .dropdown-toggle::after {
+  content: none;
+}
+
+.navbar .sub-menu:hover .dropdown-menu {
+  display: block;
+  left: 100%;
+  top: 35px;
+}
+.modal-title {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.homePage .banner {
+  min-height: 450px;
+  background: url(../assets/images/img1.jpg);
+  background-size: cover;
+  background-position: top;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+}
+.homePage .banner h1 {
+  font-size: 58px;
+  max-width: 590px;
+  color: #fff;
+  text-align: left;
+}
+.homePage .banner1 {
+  min-height: 650px;
+  background: url(../assets/images/aboutBanner.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+}
+
+.banner2 {
+  min-height: 450px;
+  background: url(../assets/images/businessCover.png);
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+}
+.banner2 h1 {
+  font-size: 58px;
+  /* max-width: 590px; */
+  color: #fff;
+  text-align: center;
+}
+
+#pri-para {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  text-align: left;
+}
+
+.homePage .banner1 h1 {
+  font-size: 70px;
+  color: #fff;
+  margin: auto;
+  text-align: center;
+}
+.homePage .aboutUsSec {
+  padding: 80px 0;
+}
+/* .homePage .sHeading:after {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 4px;
+      background-color: #000;
+      bottom: -10px;
+      left: 50%;
+      transform: translate(-50%,0);
+    } */
+.homePage .sHeading {
+  position: relative;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.homePage .serviceSec {
+  padding: 60px 0;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.card__bx {
+  --bg-clr: #fff;
+  --txt-clr: #ffffff;
+  --btn-txt-clr: #fff;
+  --transition: all 0.5s;
+
+  font-family: "Poppins", sans-serif;
+  height: 350px;
+  /* max-width: 300px; */
+  overflow: hidden;
+  border-radius: 20px;
+  border-top-left-radius: 70px;
+  position: relative;
+  overflow: hidden;
+  background: var(--clr);
+  transition: var(--transition);
+}
+.card__1 {
+  /* --clr: #249eff; */
+  --clr: #000;
+}
+.card__2 {
+  --clr: #ff1f6b;
+}
+.card__3 {
+  --clr: #98ff21;
+}
+.card__bx .card__data {
+  position: absolute;
+  inset: 10px;
+  border-radius: 10px;
+  background: var(--bg-clr);
+}
+.card__bx .card__data .card__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom-right-radius: 50%;
+  height: 140px;
+  width: 140px;
+  background: var(--clr);
+}
+.card__bx .card__data .card__icon::before {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  border-top-left-radius: 30px;
+  background: transparent;
+  box-shadow: -5px -5px 0 5px var(--clr);
+}
+.card__bx .card__data .card__icon::after {
+  content: "";
+  position: absolute;
+  right: -30px;
+  top: 0;
+  height: 30px;
+  width: 30px;
+  border-top-left-radius: 30px;
+  background: transparent;
+  box-shadow: -5px -5px 0 5px var(--clr);
+}
+.card__bx .card__data .card__icon .card__icon-bx {
+  position: absolute;
+  inset: 10px;
+  border-radius: 10px;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  background: var(--bg-clr);
+  color: var(--clr);
+}
+.card__bx:hover .card__data .card__icon .card__icon-bx {
+  background: var(--clr);
+  color: var(--txt-clr);
+  transition: var(--transition);
+}
+.card__bx .card__data .card__content {
+  position: absolute;
+  top: 150px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  color: var(--txt-clr);
+  width: 100%;
+}
+.card__bx .card__data .card__content h3 {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  min-height: 57.6px;
+  color: #000;
+}
+.card__bx .card__data .card__content p {
+  font-size: 14px;
+  opacity: 0.75;
+}
+.card__bx .card__data .card__content a {
+  display: inline-flex;
+  align-self: center;
+  padding: 10px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 30px;
+  border: 2px solid var(--clr);
+  color: var(--btn-txt-clr);
+  background: var(--clr);
+  transition: var(--transition);
+}
+.card__bx .card__data .card__content a:hover {
+  background: transparent;
+  color: var(--clr);
+}
+.homePage .practiceAreaSec {
+  background-color: rgba(217, 217, 217, 0.47);
+  padding: 50px 0;
+  margin: 50px 0;
+}
+.homePage .practiceAreaSec .area_box:hover {
+  background-color: #333;
+  text-decoration: none;
+  color: white;
+  transform: translateY(-5px);
+}
+.homePage .practiceAreaSec .area_box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 84px;
+  cursor: pointer;
+  background-color: white;
+  color: gray;
+  width: 100%;
+  font-size: 17px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+#drop_down {
+  position: relative;
+  left: 212px;
+  top: -50px;
+}
+.gap {
+  margin-bottom: -20px;
+}
+.paymentPage .banner {
+  height: 380px;
+  background: url(../assets/images/businessCover.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+.paymentPage .banner h1 {
+  color: #fff;
+  font-size: 55px;
+  font-weight: 600;
+}
+.paymentPage .planMain {
+  padding: 50px 0;
+
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.19); */
+}
+.paymentPage .planMain .mHeading {
+  color: #000;
+  /* font-family: Montserrat; */
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0;
+}
+.mHeading1 {
+  color: #000;
+  /* font-family: Montserrat; */
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0;
+}
+.paymentPage .planMain .planCardMain {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.paymentPage .planMain .planCardMain .arrowDowm {
+  height: 60px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.paymentPage .planMain .planCardMain .arrowDowm img {
+  max-height: 100%;
+}
+.paymentPage .planMain .description {
+  font-size: 18px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+.paymentPage .planMain .discount {
+  text-align: center;
+  margin-top: 10px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.paymentPage .planMain .planCard {
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+  /* max-width: 380px;
+    margin-left: auto;
+    margin-right: auto; */
+  height: 100%;
+}
+.paymentPage .planMain .planCard .head {
+  background: #0e0e0e;
+  padding: 16px;
+  text-align: center;
+  color: #fff;
+  /* font-family: Montserrat; */
+  font-size: 36px;
+  font-weight: 600;
+}
+.paymentPage .planMain .planCard .cardMain {
+  padding: 30px;
+}
+.paymentPage .planMain .planCard .cardMain .price {
+  color: #000;
+  /* font-family: Montserrat; */
+  font-size: 70px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0;
+  line-height: 1;
+}
+.paymentPage .planMain .planCard .cardMain .time {
+  color: #000;
+  /* font-family: Montserrat; */
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+.paymentPage .planMain .planCard .cardMain .poinM {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+.paymentPage .planMain .planCard .cardMain .poinM .check {
+  margin-right: 10px;
+}
+.paymentPage .planMain .planCard .cardMain .poinM img {
+  width: 19px;
+}
+.paymentPage .planMain .planCard .cardMain .poinM .title {
+  text-decoration: underline;
+  color: #000;
+  /* font-family: Montserrat; */
+  font-size: 21px;
+  font-weight: bold;
+  text-align: left;
+}
+.paymentPage .planMain .planCard .cardMain .poinM .detail {
+  color: #000;
+  font-family: Inter;
+  font-size: 18px;
+  margin-top: 10px;
+  word-break: break-word;
+  line-height: 1.3;
+}
+.paymentPage .planMain .planBtn {
+  /* display: block; */
+  background: #fff;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25);
+  padding: 7px 20px;
+  font-size: 25px;
+  /* max-width: 200px; */
+  margin-left: auto;
+  margin-right: auto;
+  color: #000;
+  /* font-family: Montserrat; */
+  font-size: 33px;
+  font-weight: bold;
+  border: none;
+}
+.paymentPage .planMain .planCard .cardMain .enroll {
+  display: block;
+  background: #0e0e0e;
+  color: white;
+  padding: 7px 20px;
+  font-size: 25px;
+  max-width: 200px;
+  width: 100%;
+  margin: auto;
+}
+.jc-center {
+  justify-content: center;
+}
+
+.planPage .chooseBtn {
+  display: block;
+  text-decoration: none;
+  border-radius: 5px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  /* font-family: Montserrat; */
+  font-size: 22px;
+  padding: 15px;
+  cursor: pointer;
+  max-width: 400px;
+  margin: auto;
+  margin-bottom: 60px;
+  font-weight: bold;
+}
+.planPage .quickConSec {
+  padding-bottom: 60px;
+  padding-top: 20px;
+}
+.planPage .quickConSec .inquiryForm {
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  width: 100%;
+  padding: 16px;
+  display: block;
+}
+.planPage .quickConSec .inquiryForm {
+  padding: 30px;
+  width: 100%;
+}
+.planPage .quickConSec .inquiryForm .title {
+  color: #000;
+  text-align: center;
+  /* font-family: Montserrat; */
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.planPage .quickConSec .inquiryForm input:focus {
+  box-shadow: none;
+}
+.planPage .quickConSec .inquiryForm input::placeholder {
+  color: rgba(0, 0, 0, 0.19);
+}
+/* .planPage .quickConSec .inquiryForm select:not():checked {
+    
+    color: rgba(0, 0, 0, 0.19);
+  } */
+.planPage .quickConSec .inquiryForm input,
+.planPage .quickConSec .inquiryForm textarea,
+.planPage .quickConSec .inquiryForm select {
+  border-radius: 0px;
+  background: rgba(217, 217, 217, 0.47);
+  color: rgba(0, 0, 0, 0.9);
+  /* font-family: Inter; */
+  font-size: 15px;
+  border: none;
+  margin-bottom: 20px;
+}
+.planPage .quickConSec .inquiryForm button {
+  border-radius: 0px;
+  background: #000;
+  border: 2px solid #000;
+  color: #fff;
+  width: 100%;
+  padding: 4px;
+  text-align: center;
+  transition: all 0.3s;
+}
+.planPage .quickConSec h1 {
+  font-size: 70px;
+  font-weight: bold;
+  text-align: center;
+}
+.planPage .quickConSec .inquiryForm button:hover {
+  background: #fff;
+  color: #000;
+  transition: all 0.3s;
+}
+.ai-center {
+  align-items: center;
+}
+
+.goBackPlan {
+  height: 30px;
+  display: inline-block;
+  cursor: pointer;
+}
+.goBackPlan img {
+  max-height: 100%;
+}
+.accordion-button:not(.collapsed) {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.accordion-button {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .planPage .sec2 {
+    max-width: 1000px;
+  }
+  .planPage .dateSec {
+    max-width: 1000px;
+  }
+  .planPage .immigrationPlanSec {
+    max-width: 1000px;
+  }
+  #drop_down {
+    position: relative;
+    left: 176px;
+    top: -50px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  #drop_down {
+    position: relative;
+    left: 139px;
+    top: -50px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #drop_down {
+    position: relative;
+    left: 91px;
+    top: -50px;
+  }
+}
+
+@media screen and (min-width: 100px) and (max-width: 576px) {
+  #drop_down {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .planPage .sec2 .offMain {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .planPage .dateSec .timeMain .timeSelect button {
+    padding: 8px 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card__bx {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .planPage .sec2 .formMain {
+    flex-direction: column;
+  }
+  .planPage .dateSec .timeMain .timeSelect button {
+    margin: 0 8px;
+    font-size: 24px;
+  }
+  .planPage .dateSec {
+    padding: 30px 16px;
+  }
+  .planPage .immigrationPlanSec .plan .title {
+    font-size: 20px;
+  }
+  .planPage .immigrationPlanSec .plan {
+    padding: 16px 12px;
+  }
+  .planPage .immigrationPlanSec .head {
+    font-size: 35px;
+  }
+  .planPage .banner h1 {
+    font-size: 40px;
+  }
+  .paymentPage .banner h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-dialog {
+    max-width: 1600px !important;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 1200px) {
+  .modal-dialog {
+    max-width: 1000px !important;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.biopic {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.bio {
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1800px) {
+  .biopic {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .para1 {
+    padding-top: 240px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .biopic {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .para1 {
+    padding-top: 104px;
+  }
+}
+
+@media screen and (min-width: 996px) and (max-width: 1199.6px) {
+  .biopic {
+    width: 100%;
+    /* margin-top: 200px; */
+  }
+
+  .homePage .sHeading {
+    position: relative;
+    font-size: 50px;
+    text-align: center;
+    /* margin-bottom: 50px; */
+  }
+
+  .para1 {
+    font-size: 14px;
+    margin-top: 77px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 996px) {
+  .para1 {
+    margin-top: 40px;
+  }
+}
+
+.skiptranslate iframe {
+  display: none;
+}
+.goog-logo-link {
+  display: none !important;
+}
+
+.goog-te-gadget {
+  color: transparent !important;
+  position: relative;
+  top: 3px;
+}
+
+#google_translate_element select {
+  /* background: #f6edfd;*/
+  color: rgba(0, 0, 0, 0.45);
+  border: none;
+  border-radius: 3px;
+  padding: 6px 8px;
+  font-size: 20px;
+}
+.VIpgJd-ZVi9od-l4eHX-hSRGPd {
+  display: none !important;
+}
+
+.container {
+  text-align: center; /* Center-align the content */
+}
+
+.grey-line {
+  border: 1px solid grey; /* Grey border line */
+  /* You can customize the line's width, style, and other properties here */
+  margin: 0 215px auto; /* Center-align the line horizontally within the container */
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+  border-bottom-right-radius: var(--bs-accordion-inner-border-radius);
+  border-bottom-left-radius: var(--bs-accordion-inner-border-radius);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.calendly-badge-widget .calendly-badge-content {
+  display: table-cell;
+  width: auto;
+  height: 48px;
+  padding: 0 30px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 2px 5px;
+  font-family: sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.calendly-badge-widget {
+  position: absolute;
+  top: 129px;
+  right: -36px;
+}
+
+.calendly-color {
+  background-color: black;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 5px;
+  color: white;
+  margin-top: 60px;
+}
+
+.schapp {
+  margin-top: 30px;
+  font-size: 24px;
+}
+
+.btns-after {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btns-after-family2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1200px) {
+  .btns-after {
+    display: block;
+    justify-content: space-between;
+  }
+
+  .btns-after-family2 {
+    display: block;
+    justify-content: space-around;
+  }
+
+  .dist-btn1 {
+    margin-top: 20px;
+  }
+
+  .dist-btn2 {
+    margin-top: 20px;
+  }
+
+  .dist-btn3 {
+    margin-top: 20px;
+  }
+}
