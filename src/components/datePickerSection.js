@@ -1,10 +1,9 @@
+'use client'
 import React, { useState } from 'react'
-import DatePicker from 'react-datepicker'
 import "react-datepicker/dist/react-datepicker.css";
 import Link  from 'next/link';
 import StripeCheckout from 'react-stripe-checkout';
 import Calendly from './Calendly';
-
 
 export const DatePickerSection = ({paymentPagePath}) => {
 
@@ -20,30 +19,13 @@ export const DatePickerSection = ({paymentPagePath}) => {
       setEndDate(end);
     };
 
-
+    console.log(process.env.REACT_APP_STRIPE_PRIVATE_KEY)
     const onToken = (token) => {
         console.log(token);
       }
   return (
     <section className='dateSec'>
         <div className="row">
-         
-
-        {/* <div className="col-lg-4 col-md-5">
-                <div className="datePicMain">
-                    <div className="head">Select Your Date</div>
-                    <DatePicker
-                    selected={startDate}
-                    onChange={onChange}
-                    startDate={startDate}
-                    endDate={endDate}
-                    selectsRange
-                    inline
-                    />
-                </div>
-            </div> */}
-
-
             <div className="col-lg-8 col-md-7">
                 <div className="timeMain">
                     {/* <div className="head">Select Time</div> */}
@@ -51,7 +33,7 @@ export const DatePickerSection = ({paymentPagePath}) => {
                     <StripeCheckout 
                       name="Lexom Law"
                       token={onToken}
-                      stripeKey={process.env.REACT_APP_STRIPE_PRIVATE_KEY}
+                      stripeKey={process.env.NEXT_PUBLIC_STRIPE_PRIVATE_KEY}
                       amount={150 * 100} 
                       currency="USD">
 
@@ -63,12 +45,12 @@ export const DatePickerSection = ({paymentPagePath}) => {
                     
                     name="Lexom Law"
                     token={onToken}
-                    stripeKey={process.env.REACT_APP_STRIPE_PRIVATE_KEY}
+                    stripeKey={process.env.NEXT_PUBLIC_STRIPE_PRIVATE_KEY}
                     amount={150 * 100} 
                     currency="USD"
                     >
 
-                    <Link to={paymentPagePath?paymentPagePath:""} className="makePay">Make Payment To Confirm Your Appointment</Link>
+                    <Link href={paymentPagePath?paymentPagePath:""} className="makePay">Make Payment To Confirm Your Appointment</Link>
                     </StripeCheckout>
 
                 </div>

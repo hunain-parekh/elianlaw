@@ -15,13 +15,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <body className={inter.className}>
         <Navbar />
         {children}
         <Footer />
         <Script
-          id="translate"
+          id='translate'
           dangerouslySetInnerHTML={{
             __html: `
                 function googleTranslateElementInit() {
@@ -31,9 +31,15 @@ export default function RootLayout({ children }) {
           }}
         />
         <Script
-          type="text/javascript"
+          type='text/javascript'
           src={`https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit`}
         />
+        {/* for bootstrap */}
+        <Script
+          src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js'
+          integrity='sha384-pzjw8FS03U02KQFku1LqFvBzp4JGcRM9SMoCMmJZl5qME5z8'
+          crossOrigin='anonymous'
+        ></Script>
       </body>
     </html>
   );

@@ -1,5 +1,6 @@
+'use client'
 import React, { useState } from "react";
-import style from './InquiryForm.module.css'
+import { FaChevronDown } from 'react-icons/fa';
 const InquiryForm = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -31,14 +32,14 @@ const InquiryForm = () => {
   };
 
   return (
-    <section className={style.quickConSec}>
+    <section className='quickConSec'>
       <div className='container'>
-        <div className={`row ${style.ai_center}`}>
+        <div className='row ai-center'>
           <div className='col-md-7'>
             <h1>INQUIRY FORM</h1>
           </div>
           <div className='col-md-5'>
-            <form className={style.inquiryForm} onSubmit={handleSubmit}>
+            <form className='inquiryForm' onSubmit={handleSubmit}>
               <div className='title'>Ask Your Question</div>
               <div className='form-group d-flex'>
                 <input
@@ -89,7 +90,7 @@ const InquiryForm = () => {
                     <option value='oranges3'>Other</option>
                   </optgroup>
                 </select>
-                <i className='fas fa-chevron-down' id='drop_down'></i>
+                <FaChevronDown id='drop_down' />
               </div>
 
               <input

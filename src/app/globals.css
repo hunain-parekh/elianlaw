@@ -1040,6 +1040,11 @@ footer .miniFooter {
   display: flex;
   justify-content: space-around;
 }
+.contactUsForm{
+  display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
 
 @media screen and (min-width: 0px) and (max-width: 1200px) {
   .btns-after {

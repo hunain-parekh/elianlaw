@@ -1,18 +1,18 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
 import React, { useState } from "react";
-import style from "./page.module.css";
 import Link from "next/link";
 import InquiryForm from "@/components/InquiryForm";
 import { DatePickerSection } from "@/components/datePickerSection";
-import { IoChevronForwardSharp } from 'react-icons/io5';
-import { FaGlobeAmericas,FaBusinessTime } from 'react-icons/fa';
+import { IoChevronForwardSharp } from "react-icons/io5";
+import { FaGlobeAmericas, FaBusinessTime } from "react-icons/fa";
 
 const Home = () => {
   const areas = [
     {
       name: "Business Law",
       path: "/plan/business",
+      
     },
     {
       name: "Immigration",
@@ -61,8 +61,8 @@ const Home = () => {
   ];
 
   return (
-    <div className={`${style.homePage} ${style.planPage}`}>
-      <div className={style.banner}>
+    <div className='homePage planPage'>
+      <div className='banner'>
         <div className='container'>
           <h1>
             Unlock Unlimited Legal Support and Protection with Our Exclusive
@@ -70,9 +70,9 @@ const Home = () => {
           </h1>
         </div>
       </div>
-      <section className={style.aboutUsSec}>
+      <section className='aboutUsSec'>
         <div className='container'>
-          <h1 className={style.sHeading}>Introducing Lexom Law</h1>
+          <h1 className='sHeading'>Introducing Lexom Law</h1>
           <p style={{ textAlign: "justify" }}>
             Where age-old tradition meets modern ambition, Lexom Law stands at
             the crossroads of dreams and reality. Our name, a blend of the Latin
@@ -94,19 +94,19 @@ const Home = () => {
           </p>
         </div>
       </section>
-      <section className={style.serviceSec}>
+      <section className='serviceSec'>
         <div className='container'>
-          <h1 className={style.sHeading}>Services</h1>
+          <h1 className='sHeading'>Services</h1>
           <div className='row'>
             <div className='col-md-6'>
-              <div className={`${style.card__bx} ${style.card__1}`}>
-                <div className={style.card__data}>
-                  <div className={style.card__icon}>
-                    <div className={style.card__icon_bx}>
-                    <FaBusinessTime />
+              <div className='card__bx card__1'>
+                <div className='card__data'>
+                  <div className='card__icon'>
+                    <div className='card__icon-bx'>
+                      <FaBusinessTime />
                     </div>
                   </div>
-                  <div className={style.card__content}>
+                  <div className='card__content'>
                     <h3>Business Law</h3>
                     <Link href='/plan/business'>Read More</Link>
                   </div>
@@ -114,14 +114,14 @@ const Home = () => {
               </div>
             </div>
             <div className='col-md-6'>
-              <div className={`${style.card__bx} ${style.card__1}`}>
-                <div className={style.card__data}>
-                  <div className={style.card__icon}>
-                    <div className={style.card__icon_bx}>
-                    <FaGlobeAmericas />
+              <div className='card__bx card__1'>
+                <div className='card__data'>
+                  <div className='card__icon'>
+                    <div className='card__icon-bx'>
+                      <FaGlobeAmericas />
                     </div>
                   </div>
-                  <div className={style.card__content}>
+                  <div className='card__content'>
                     <h3>Immigration</h3>
                     <Link href='/plan/immigration'>Read More</Link>
                   </div>
@@ -132,13 +132,13 @@ const Home = () => {
         </div>
       </section>
 
-      <section className={style.practiceAreaSec}>
+      <section className='practiceAreaSec'>
         <div className='container'>
-          <h1 className={style.sHeading}>OUR PRACTICE AREAS</h1>
+          <h1 className='sHeading'>OUR PRACTICE AREAS</h1>
           <div className='row'>
             {areas?.map((item, key) => (
               <div className='col-lg-3 col-md-6 mb-3' key={key}>
-                <Link href={item?.path} className={style.area_box}>
+                <Link href={item?.path} className='area_box'>
                   <p className='mb-0'>{item?.name}</p>
                   <IoChevronForwardSharp />
                 </Link>
@@ -149,8 +149,8 @@ const Home = () => {
       </section>
       <InquiryForm />
       <div className='container'>
-        <div className={style.heading}>Questions about legal problem?</div>
-        {/* <DatePickerSection /> */}
+        <div className='heading'>Questions about legal problem?</div>
+        <DatePickerSection />
       </div>
     </div>
   );
