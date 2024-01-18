@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 import StripeCheckout from "react-stripe-checkout";
 import checkIco from "@/assets/images/checkIco.svg";
 import Image from "next/image";
@@ -75,9 +75,6 @@ const CorporationPlan = () => {
     console.log(token);
   };
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
   return (
     <div className='paymentPage'>
       <div className='banner'>
@@ -110,7 +107,7 @@ const CorporationPlan = () => {
                   <StripeCheckout
                     name='Lexim Law'
                     token={onToken}
-                    stripeKey={process.env.REACT_APP_STRIPE_PRIVATE_KEY}
+                    stripeKey={process.env.NEXT_PUBLIC_STRIPE_PRIVATE_KEY}
                     amount={25 * 100}
                     currency='USD'
                   >
@@ -141,7 +138,7 @@ const CorporationPlan = () => {
                   <StripeCheckout
                     name='Lexim Law'
                     token={onToken}
-                    stripeKey={process.env.REACT_APP_STRIPE_PRIVATE_KEY}
+                    stripeKey={process.env.NEXT_PUBLIC_STRIPE_PRIVATE_KEY}
                     amount={79 * 100}
                     currency='USD'
                   >
@@ -172,7 +169,7 @@ const CorporationPlan = () => {
                   <StripeCheckout
                     name='Lexim Law'
                     token={onToken}
-                    stripeKey={process.env.REACT_APP_STRIPE_PRIVATE_KEY}
+                    stripeKey={process.env.NEXT_PUBLIC_STRIPE_PRIVATE_KEY}
                     amount={199 * 100}
                     currency='USD'
                   >

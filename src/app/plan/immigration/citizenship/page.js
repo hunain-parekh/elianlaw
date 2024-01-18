@@ -1,11 +1,14 @@
-'use client'
+"use client";
 import React from "react";
 import familyIco from "@/assets/images/familyIco.svg";
 import citizanshipIco from "@/assets/images/citizanshipIco.svg";
 import workIco from "@/assets/images/workIco.svg";
 import assylumIco from "@/assets/images/assylumIco.svg";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Citizenship = ({ setShowPayment }) => {
+  const pathname = usePathname();
   const iData = [
     {
       icon: citizanshipIco,
@@ -171,9 +174,16 @@ const Citizenship = ({ setShowPayment }) => {
           </div>
         </section>
         {/* <ImmigrationPlan item={iData} /> */}
-        <div className='chooseBtn' onClick={() => setShowPayment(true)}>
-          Choose a Plan for Nationalization
-        </div>
+
+        {pathname === "/plan/immigration/citizenship" ? (
+          <Link className='chooseBtn' href={"/payment/naturalization"}>
+            Choose a Plan for Naturalization
+          </Link>
+        ) : (
+          <div className='chooseBtn' onClick={() => setShowPayment(true)}>
+            Choose a Plan for Naturalization
+          </div>
+        )}
 
         {/* <section className="sec2 pt-0">
                 <div className="heading">Questions about legal problem?</div>

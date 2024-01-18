@@ -3,8 +3,8 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Script from "next/script";
-// pages/_app.js
-// import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const inter = Inter({ subsets: ["latin"] });
 

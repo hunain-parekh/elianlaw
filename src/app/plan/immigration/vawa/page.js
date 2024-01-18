@@ -4,8 +4,11 @@ import familyIco from "@/assets/images/familyIco.svg";
 import citizanshipIco from "@/assets/images/citizanshipIco.svg";
 import workIco from "@/assets/images/workIco.svg";
 import assylumIco from "@/assets/images/assylumIco.svg";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const Vawa = ({ setShowPayment }) => {
+  const pathname = usePathname();
   const iData = [
     {
       icon: citizanshipIco,
@@ -76,6 +79,7 @@ const Vawa = ({ setShowPayment }) => {
       ],
     },
   ];
+
   return (
     <div className='planPage immigration'>
       <div className='banner'>
@@ -170,9 +174,16 @@ const Vawa = ({ setShowPayment }) => {
         </section>
         {/* <ImmigrationPlan item={iData} /> */}
 
-        <div className='chooseBtn' onClick={() => setShowPayment(true)}>
-          Choose a Plan for VAWA
-        </div>
+        {/* <ImmigrationPlan item={iData} /> */}
+        {pathname === "/plan/immigration/vawa" ? (
+          <Link className='chooseBtn' href={"/payment/vawa"}>
+            Choose a Plan for VAWA
+          </Link>
+        ) : (
+          <div className='chooseBtn' onClick={() => setShowPayment(true)}>
+            Choose a Plan for VAWA
+          </div>
+        )}
 
         {/* <section className="sec2 pt-0">
                 <div className="heading">Questions about legal problem?</div>

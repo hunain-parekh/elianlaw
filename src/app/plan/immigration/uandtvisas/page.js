@@ -4,8 +4,10 @@ import familyIco from "@/assets/images/familyIco.svg";
 import citizanshipIco from "@/assets/images/citizanshipIco.svg";
 import workIco from "@/assets/images/workIco.svg";
 import assylumIco from "@/assets/images/assylumIco.svg";
-
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 const UandTVisas = ({ setShowPayment }) => {
+  const pathname = usePathname();
   const iData = [
     {
       icon: citizanshipIco,
@@ -190,9 +192,15 @@ const UandTVisas = ({ setShowPayment }) => {
         </section>
         {/* <ImmigrationPlan item={iData} /> */}
 
-        <div className='chooseBtn' onClick={() => setShowPayment(true)}>
-          Choose a Plan for U & T{" "}
-        </div>
+        {pathname === "/plan/immigration/uandtvisas" ? (
+          <Link className='chooseBtn' href={"/payment/uandt"}>
+            Choose a Plan for U & T
+          </Link>
+        ) : (
+          <div className='chooseBtn' onClick={() => setShowPayment(true)}>
+            Choose a Plan for U & T
+          </div>
+        )}
 
         {/* <section className="sec2 pt-0">
                   <div className="heading">Questions about legal problem?</div>

@@ -1,7 +1,10 @@
 "use client";
 import React from "react";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const FamilyVisas = ({ setShowPayment }) => {
+  const pathname = usePathname();
   return (
     <div className='planPage immigration'>
       <div className='banner'>
@@ -80,9 +83,15 @@ const FamilyVisas = ({ setShowPayment }) => {
           </div>
         </section>
 
-        <div className='chooseBtn' onClick={() => setShowPayment(true)}>
-          Choose a Plan for Family Visas
-        </div>
+        {pathname === "/plan/immigration/family" ? (
+          <Link className='chooseBtn' href={"/payment/family"}>
+            Choose a Plan for Family Visas
+          </Link>
+        ) : (
+          <div className='chooseBtn' onClick={() => setShowPayment(true)}>
+            Choose a Plan for Family Visas
+          </div>
+        )}
 
         {/* <section className="sec2 pt-0">
                 <div className="heading">Questions about legal problem?</div>

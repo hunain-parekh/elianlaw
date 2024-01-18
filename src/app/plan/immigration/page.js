@@ -1,7 +1,7 @@
-
+'use client'
 import React from "react";
-// import immigrationData from "@/components/immigrationPlanData";
-// import ImmigrationPlan from "@/components/immigrationPlan";
+import immigrationData from "@/components/immigrationPlanData";
+import ImmigrationPlan from "@/components/immigrationPlan";
 import businessImg1 from "@/assets/images/businessImg1.png";
 import Link from "next/link";
 import Image from "next/image";
@@ -53,7 +53,7 @@ const Immigration = () => {
             </div>
           </div>
         </section>
-        {/* <ImmigrationPlan item={immigrationData} /> */}
+        <ImmigrationPlan item={immigrationData} />
         <InquiryForm />
       </div>
     </div>

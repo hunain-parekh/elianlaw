@@ -1,34 +1,29 @@
-import React, { useState, useEffect, useRef } from "react";
+'use client'
+import OtherVisas from "@/app/plan/immigration/other/page";
+import React, {  useEffect, useRef } from "react";
+import Modal from "react-bootstrap/Modal";
+import FamilyVisas from "@/app/plan/immigration/family/page";
+import FamilyPayment from "@/app/payment/family/page";
+import WorkPayment from "@/app/payment/work/page";
+import WorkVisas from "@/app/plan/immigration/workvisas/page";
+import InvestmentPayment from "@/app/payment/investment/page";
+import InvestmentVisas from "@/app/plan/immigration/investmentvisas/page";
+import AssylumPayment from "@/app/payment/assylum/page";
+import AssylumVisas from "@/app/plan/immigration/assylumvisas/page";
+import StudentVisaPayment from "@/app/payment/studentvisa/page";
+import StudentVisas from "@/app/plan/immigration/studentvisa/page";
+import DacaPayment from "@/app/payment/daca/page";
+import Daca from "@/app/plan/immigration/daca/page";
+import VawaPayment from "@/app/payment/vawa/page";
+import Vawa from "@/app/plan/immigration/vawa/page";
+import NaturalizationPayment from "@/app/payment/naturalization/page";
+import UandTPayment from "@/app/payment/uandt/page";
+import UandTVisas from "@/app/plan/immigration/uandtvisas/page";
+import backIco from "@/assets/images/backIco.png";
+import Image from 'next/image'
+import Citizenship from "@/app/plan/immigration/citizenship/page";
 
-// import Modal from "react-bootstrap/Modal";
-// import FamilyVisas from "@/app/plan/immigration/family/page";
-// import FamilyPayment from "@/app/pages/payment/familyPayment";
-// import WorkPayment from "@/app/pages/payment/workPayment";
-// import WorkVisas from "@/app/pages/plan/workVisas";
-// import InvestmentVisas from "@/app/pages/plan/investmentVisas";
-// import InvestmentPayment from "@/app/pages/payment/investmentPayment";
-// import AssylumPayment from "@/app/pages/payment/assylum";
-// import AssylumVisas from "@/app/pages/plan/assylum";
-// import StudentVisaPayment from "@/app/pages/payment/studentVisa";
-// import StudentVisas from "@/app/pages/plan/studentVisa";
-// import UandTPayment from "@/app/pages/payment/uAndTPayment";
-// import UandTVisas from "@/app/pages/plan/uAndTvisas";
-// import NaturalizationPayment from "@/app/pages/payment/naturalization";
-// import Citizenship from "@/app/pages/plan/citizenship";
-// import VawaPayment from "@/app/pages/payment/vavaPAyment";
-// import Vawa from "@/app/pages/plan/vawa";
-// import DacaPayment from "@/app/pages/payment/daca";
-// import Daca from "@/app/pages/plan/daca";
-// import OtherVisas from "@/app/pages/plan/otherVisa";
-// import backIco from "@/assets/images/backIco.png";
-
-export default function ImmigrationModal({
-  show,
-  setShowPayment,
-  showPayment,
-  handleClose,
-  modalData,
-}) {
+const ImmigrationModal = ({ show, setShowPayment, showPayment, handleClose, modalData }) => {
   const bottomRef = useRef();
 
   useEffect(() => {
@@ -43,109 +38,110 @@ export default function ImmigrationModal({
   }, [showPayment]);
 
   return (
-    <>
-      <Modal show={show} onHide={handleClose} centered ref={bottomRef} id='mod'>
-        <Modal.Header closeButton>
-          <Modal.Title>
-            <span className='goBackPlan' onClick={() => setShowPayment(false)}>
-              {showPayment && <img src={backIco} alt='' />}
-            </span>
-          </Modal.Title>
-        </Modal.Header>
-        <Modal.Body className='p-0'>
-          {/* {modalData?.description && modalData?.description.map((item,key)=>(
-                <p key={key}>{item}</p>
-                ))} */}
-          {/* {modalData.showPayment ?
-                modalData.paymentComp
-                :
-                modalData.planComp
-                } */}
-          {modalData.title == "Family Visas" && (
-            <>
-              {showPayment ? (
-                <FamilyPayment />
-              ) : (
-                <FamilyVisas setShowPayment={setShowPayment} />
-              )}
-            </>
-          )}
-          {modalData.title == "Work Visas" && (
-            <>
-              {showPayment ? (
-                <WorkPayment />
-              ) : (
-                <WorkVisas setShowPayment={setShowPayment} />
-              )}
-            </>
-          )}
-          {modalData.title == "Investment" && (
-            <>
-              {showPayment ? (
-                <InvestmentPayment />
-              ) : (
-                <InvestmentVisas setShowPayment={setShowPayment} />
-              )}
-            </>
-          )}
-          {modalData.title == "Assylum" && (
-            <>
-              {showPayment ? (
-                <AssylumPayment />
-              ) : (
-                <AssylumVisas setShowPayment={setShowPayment} />
-              )}
-            </>
-          )}
-          {modalData.title == "Student Visa" && (
-            <>
-              {showPayment ? (
-                <StudentVisaPayment />
-              ) : (
-                <StudentVisas setShowPayment={setShowPayment} />
-              )}
-            </>
-          )}
-          {modalData.title == "U & T Visas" && (
-            <>
-              {showPayment ? (
-                <UandTPayment />
-              ) : (
-                <UandTVisas setShowPayment={setShowPayment} />
-              )}
-            </>
-          )}
-          {modalData.title == "Nationalization" && (
-            <>
-              {showPayment ? (
-                <NaturalizationPayment />
-              ) : (
-                <Citizenship setShowPayment={setShowPayment} />
-              )}
-            </>
-          )}
-          {modalData.title == "VAWA" && (
-            <>
-              {showPayment ? (
-                <VawaPayment />
-              ) : (
-                <Vawa setShowPayment={setShowPayment} />
-              )}
-            </>
-          )}
-          {modalData.title == "DACA" && (
-            <>
-              {showPayment ? (
-                <DacaPayment />
-              ) : (
-                <Daca setShowPayment={setShowPayment} />
-              )}
-            </>
-          )}
-          {modalData.title == "Other" && <OtherVisas />}
-          {/* <p>ahsa</p> */}
-        </Modal.Body>
-      </Modal>
-    </>
+    <Modal show={show} onHide={handleClose} centered ref={bottomRef} id='mod'>
+      <Modal.Header closeButton>
+        <Modal.Title>
+          <span className='goBackPlan' onClick={() => setShowPayment(false)}>
+            {showPayment && <Image src={backIco} alt='' width={30}/>}
+          </span>
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body className='p-0'>
+        {/* {modalData?.description && modalData?.description.map((item,key)=>(
+            <p key={key}>{item}</p>
+            ))} */}
+        {/* {modalData.showPayment ?
+              modalData.paymentComp
+              :
+              modalData.planComp
+              } */}
+        {modalData.title == "Family Visas" && (
+          <>
+            {showPayment ? (
+              <FamilyPayment />
+            ) : (
+              <FamilyVisas setShowPayment={setShowPayment} />
+            )}
+          </>
+        )}
+        {modalData.title == "Work Visas" && (
+          <>
+            {showPayment ? (
+              <WorkPayment />
+            ) : (
+              <WorkVisas setShowPayment={setShowPayment} />
+            )}
+          </>
+        )}
+        {modalData.title == "Investment" && (
+          <>
+            {showPayment ? (
+              <InvestmentPayment />
+            ) : (
+              <InvestmentVisas setShowPayment={setShowPayment} />
+            )}
+          </>
+        )}
+        {modalData.title == "Assylum" && (
+          <>
+            {showPayment ? (
+              <AssylumPayment />
+            ) : (
+              <AssylumVisas setShowPayment={setShowPayment} />
+            )}
+          </>
+        )}
+        {modalData.title == "Student Visa" && (
+          <>
+            {showPayment ? (
+              <StudentVisaPayment />
+            ) : (
+              <StudentVisas setShowPayment={setShowPayment} />
+            )}
+          </>
+        )}
+        {modalData.title == "U & T Visas" && (
+          <>
+            {showPayment ? (
+              <UandTPayment />
+            ) : (
+              <UandTVisas setShowPayment={setShowPayment} />
+            )}
+          </>
+        )}
+        {modalData.title == "Nationalization" && (
+          <>
+            {showPayment ? (
+              <NaturalizationPayment />
+            ) : (
+              <Citizenship setShowPayment={setShowPayment} />
+            )}
+          </>
+        )}
+        {modalData.title == "VAWA" && (
+          <>
+            {showPayment ? (
+              <VawaPayment />
+            ) : (
+              <Vawa setShowPayment={setShowPayment} />
+            )}
+          </>
+        )}
+        {modalData.title == "DACA" && (
+          <>
+            {showPayment ? (
+              <DacaPayment />
+            ) : (
+              <Daca setShowPayment={setShowPayment} />
+            )}
+          </>
+        )}
+        {modalData.title == "Other" && <OtherVisas />}
+        {/* <p>ahsa</p> */}
+      </Modal.Body>
+    </Modal>
   );
-}
+};
+
+export default ImmigrationModal;
+

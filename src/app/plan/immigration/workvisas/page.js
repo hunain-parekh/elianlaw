@@ -1,10 +1,15 @@
-'use client'
+/* eslint-disable react/no-unescaped-entities */
+"use client";
 import React from "react";
 import citizanshipIco from "@/assets/images/citizanshipIco.svg";
 import asstetIco from "@/assets/images/asstetIco.svg";
 import assylumIco from "@/assets/images/assylumIco.svg";
 import familyIco from "@/assets/images/familyIco.svg";
-const WorkVisas = ({setShowPayment}) => {
+import { usePathname } from "next/navigation";
+import Link from "next/link";
+
+const WorkVisas = ({ setShowPayment }) => {
+  const pathname = usePathname();
   const iData = [
     {
       icon: citizanshipIco,
@@ -176,9 +181,16 @@ const WorkVisas = ({setShowPayment}) => {
         </section>
         {/* <ImmigrationPlan item={iData} /> */}
 
-        <div className='chooseBtn' onClick={() => setShowPayment(true)}>
-          Choose a Plan for Work
-        </div>
+        {/* <ImmigrationPlan item={iData} /> */}
+        {pathname === "/plan/immigration/workvisas" ? (
+          <Link className='chooseBtn' href={"/payment/work"}>
+            Choose a Plan for Work
+          </Link>
+        ) : (
+          <div className='chooseBtn' onClick={() => setShowPayment(true)}>
+            Choose a Plan for Work
+          </div>
+        )}
 
         {/* <section className="sec2 pt-0">
                 <div className="heading">Questions about legal problem?</div>

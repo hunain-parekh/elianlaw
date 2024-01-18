@@ -1,9 +1,11 @@
 "use client";
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import familyIco from "@/assets/images/familyIco.svg";
 import citizanshipIco from "@/assets/images/citizanshipIco.svg";
 import workIco from "@/assets/images/workIco.svg";
 import assylumIco from "@/assets/images/assylumIco.svg";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const AssylumVisas = ({ setShowPayment }) => {
   const iData = [
@@ -81,7 +83,7 @@ const AssylumVisas = ({ setShowPayment }) => {
       ],
     },
   ];
-
+  const pathname = usePathname();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -175,11 +177,15 @@ const AssylumVisas = ({ setShowPayment }) => {
           </div>
         </section>
         {/* <ImmigrationPlan item={iData} /> */}
-
-        <div className='chooseBtn' onClick={() => setShowPayment(true)}>
-          Choose a Plan for Assylum
-        </div>
-
+        {pathname === "/plan/immigration/assylumvisas" ? (
+          <Link className='chooseBtn' href={"/payment/assylum"}>
+            Choose a Plan for Asylum
+          </Link>
+        ) : (
+          <div className='chooseBtn' onClick={() => setShowPayment(true)}>
+            Choose a Plan for Asylum
+          </div>
+        )}
         {/* <section className="sec2 pt-0">
             <div className="heading">Questions about legal problem?</div>
             <div className="row">
