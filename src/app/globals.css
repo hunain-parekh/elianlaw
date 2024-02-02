@@ -800,6 +800,29 @@ footer .miniFooter {
 .accordion-button {
   cursor: pointer;
 }
+.contactUsForm {
+  padding: 8% 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.contactUsForm h2 {
+  font-size: 3rem;
+}
+.contactUsForm p {
+  margin-bottom: 0;
+}
+.socialIcons a {
+  padding-right: 10px;
+}
+.socialIcons {
+  padding-top: 20px;
+  display: flex;
+}
+.planPage .quickConSec .contactUsForm .inquiryForm{
+  padding:70px 30px;
+}
 
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
   .planPage .sec2 {
@@ -1040,11 +1063,7 @@ footer .miniFooter {
   display: flex;
   justify-content: space-around;
 }
-.contactUsForm{
-  display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
+
 
 @media screen and (min-width: 0px) and (max-width: 1200px) {
   .btns-after {
@@ -1067,5 +1086,21 @@ footer .miniFooter {
 
   .dist-btn3 {
     margin-top: 20px;
+  }
+  .contactUsForm {
+    padding: 5%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactUsForm p {
+    text-align: center;
+  }
+  .socialIcons {
+    align-items: center;
+    justify-content: center;
+  }
+  .contactUsForm .inquiryForm{
+    margin-top: 100px;
   }
 }

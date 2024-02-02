@@ -1,5 +1,7 @@
-'use client'
-import React, {useState} from "react";
+"use client";
+import React, { useState } from "react";
+import Link from "next/link";
+import { FaFacebookF, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -38,98 +40,77 @@ const Contact = () => {
         </div>
       </div>
       <section className='quickConSec'>
-        <div className='container'>
-          <div className='col ai-center contactUsForm'>
-            <div className='col-md-7'>
-              <h1>Contact Us FORM</h1>
+        <div className='contactUsForm'>
+          <div className=''>
+            <h2>Contact Us</h2>
+            <p>Our mailing address is:</p>
+            <p>152A Charlotte Street,</p>
+            <p>Peterborough ON</p>
+            <p>Phone:234-451-3453</p>
+            <div className="socialIcons">
+              <Link href='your_facebook_link'>
+                <FaFacebookF size={30} color="black"/>
+              </Link>
+              <Link href='your_linkedin_link'>
+                <FaLinkedin size={30} color="black"/>
+              </Link>
+              <Link href='your_instagram_link'>
+                <FaInstagram  size={30} color="black"/>
+              </Link>
             </div>
-            <div className='col-md-5'>
-              <form className='inquiryForm' onSubmit={handleSubmit}>
-                <div className='title'>Ask Your Question</div>
-                <div className='form-group d-flex'>
-                  <input
-                    className='form-control me-4'
-                    type='text'
-                    name='name'
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    placeholder='First Name'
-                  />
-
-                  <input
-                    className='form-control'
-                    type='text'
-                    name='lastname'
-                    value={formData.lastname}
-                    onChange={handleChange}
-                    required
-                    placeholder='Last Name'
-                  />
-                </div>
-                <div className='form-group'>
-                  <input
-                    className='form-control'
-                    type='text'
-                    name='email'
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    placeholder='Email Address'
-                  />
-                </div>
-                {/* <div className='form-group gap'>
-                  <select
-                    className='form-control'
-                    placeholder='Reason'
-                    required
-                  >
-                    <option value='' selected='selected' disabled>
-                      Reason{" "}
-                    </option>
-                    <option value=''>Business Law</option>
-                    <optgroup label='Immigration Law'>
-                      <option value='oranges1'>Family Based Residency</option>
-                      <option value='oranges2'>Marriage Based Residency</option>
-                      <option value='oranges3'>Investment Visas</option>
-                      <option value='oranges3'>Work Visas</option>
-                      <option value='oranges3'>Victims Of Crime</option>
-                      <option value='oranges3'>Asylum & Refugee</option>
-                      <option value='oranges3'>Citizenship</option>
-                      <option value='oranges3'>Other</option>
-                    </optgroup>
-                  </select>
-                  <i className='fas fa-chevron-down' id='drop_down'></i>
-                </div> */}
-
-                {/* <input
-                  className='form-control'
-                  type='file'
-                  name='file'
-                  value={formData.file}
+          </div>
+          <div className=''>
+            <form className='inquiryForm' onSubmit={handleSubmit}>
+              <div className='title'>Ask Your Question</div>
+              <div className='form-group d-flex'>
+                <input
+                  className='form-control me-4'
+                  type='text'
+                  name='name'
+                  value={formData.name}
                   onChange={handleChange}
-                  accept='.pdf, .doc, .docx' // Specify accepted file types if needed
-                /> */}
-
-                <div className='form-group'>
-                  <textarea
-                    className='form-control'
-                    type='text'
-                    name='char'
-                    value={formData.char}
-                    onChange={handleChange}
-                    required
-                    id=''
-                    rows='3'
-                    placeholder='Ask Your Questions (500 characters)'
-                    maxLength={120}
-                  ></textarea>
-                </div>
-                <button className='submitBtn' type='submit'>
-                  Submit
-                </button>
-              </form>
-            </div>
+                  required
+                  placeholder='First Name'
+                />
+                <input
+                  className='form-control'
+                  type='text'
+                  name='lastname'
+                  value={formData.lastname}
+                  onChange={handleChange}
+                  required
+                  placeholder='Last Name'
+                />
+              </div>
+              <div className='form-group'>
+                <input
+                  className='form-control'
+                  type='text'
+                  name='email'
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                  placeholder='Email Address'
+                />
+              </div>
+              <div className='form-group'>
+                <textarea
+                  className='form-control'
+                  type='text'
+                  name='char'
+                  value={formData.char}
+                  onChange={handleChange}
+                  required
+                  id=''
+                  rows='3'
+                  placeholder='Ask Your Questions (500 characters)'
+                  maxLength={120}
+                ></textarea>
+              </div>
+              <button className='submitBtn' type='submit'>
+                Submit
+              </button>
+            </form>
           </div>
         </div>
       </section>
