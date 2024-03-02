@@ -8,6 +8,9 @@
 html {
   scroll-behavior: auto !important;
 }
+body{
+  top:0px !important;
+}
 .navbar .navbar-collapse {
   justify-content: flex-end;
 }
