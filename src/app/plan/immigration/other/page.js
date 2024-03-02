@@ -105,7 +105,7 @@ const OtherVisas = () => {
                 <p>
                   Visitor Visas: Planning a visit to the United States for
                   tourism, medical treatment, or business? Our skilled attorneys
-                  can assist you in obtaining B-1/B-2 visitor visas. We'll
+                  can assist you in obtaining B-1/B-2 visitor visas. We&apos;ll
                   navigate the application process with precision, ensuring your
                   case is compelling and meets all necessary requirements.
                 </p>
@@ -122,7 +122,7 @@ const OtherVisas = () => {
                   or talents in fields such as science, arts, athletics, or
                   business, our experienced attorneys can assist you in
                   obtaining visas based on extraordinary ability, such as the
-                  O-1 visa. We'll work closely with you, compiling the necessary
+                  O-1 visa. We&apos;ll work closely with you, compiling the necessary
                   evidence to present a compelling case that showcases your
                   extraordinary abilities.
                 </p>
@@ -143,7 +143,7 @@ const OtherVisas = () => {
                   bringing your family together.
                 </p>
                 <p>
-                  Specialized Visas: Our firm's expertise extends to specialized
+                  Specialized Visas: Our firm&apos;s expertise extends to specialized
                   visa categories, including religious worker visas (R-1) and
                   visas for individuals with extraordinary ability in the arts
                   or athletics (P visas). We possess the in-depth knowledge to

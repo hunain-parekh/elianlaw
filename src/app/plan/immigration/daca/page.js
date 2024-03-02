@@ -92,7 +92,7 @@ const Daca = ({ setShowPayment }) => {
             <div className='col-12'>
               <div className='content'>
                 <p>
-                  "At Lexom Law, we understand the importance of the DACA
+                  At Lexom Law, we understand the importance of the DACA
                   (Deferred Action for Childhood Arrivals) program and the
                   opportunities it provides for eligible individuals who were
                   brought to the United States as children. Our dedicated team
