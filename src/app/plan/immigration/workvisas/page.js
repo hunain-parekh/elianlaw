@@ -16,7 +16,7 @@ const WorkVisas = ({ setShowPayment }) => {
       title: "Citizenship",
       modalHead: "Naturalization and Obtaining Citizenship",
       description: [
-        "At Lexom Law, we understand the significance of obtaining U.S. citizenship and the rights and opportunities it affords individuals. Our firm specializes in the citizenship process, offering comprehensive legal services to help you navigate the path to becoming a U.S. citizen.",
+        "At My Immigration Hub, we understand the significance of obtaining U.S. citizenship and the rights and opportunities it affords individuals. Our firm specializes in the citizenship process, offering comprehensive legal services to help you navigate the path to becoming a U.S. citizen.",
         "The process of obtaining U.S. citizenship, also known as naturalization, involves meeting specific eligibility criteria and completing various requirements set by U.S. immigration laws. We have an in-depth understanding of the naturalization process and stay updated with the latest developments and requirements to provide you with expert guidance and representation.",
         "Our citizenship services include:",
         "Eligibility Assessment: We will carefully evaluate your eligibility for U.S. citizenship, considering factors such as your immigration status, length of residency, age, and language proficiency. We will provide a thorough analysis of your case, ensuring you meet the necessary requirements before proceeding with the naturalization process.",
@@ -24,7 +24,7 @@ const WorkVisas = ({ setShowPayment }) => {
         "Application Filing: We will guide you through the naturalization application process, including the completion of the application for naturalization. Our firm will review your application to ensure accuracy and completeness before submitting it to the appropriate U.S. Citizenship and Immigration Services (USCIS) office.",
         "Interview Preparation: As part of the naturalization process, you will be required to attend an interview with a USCIS officer. Our firm will prepare you for the interview, familiarizing you with the types of questions that may be asked and providing guidance on how to best present your case. We will ensure that you are well-prepared and confident for this crucial step.",
         "Ongoing Support: Throughout the naturalization process, our team will provide you with personalized support and guidance. We will keep you informed about the progress of your case, address any concerns or questions you may have, and represent your best interests at every stage.",
-        "At Lexom Law, we are committed to helping you achieve your goal of U.S. citizenship. Our experienced attorneys will provide expert advice, diligent representation, and compassionate support throughout the naturalization process. We understand the significance of this milestone and are dedicated to helping you navigate the complexities of becoming a U.S. citizen.",
+        "At My Immigration Hub, we are committed to helping you achieve your goal of U.S. citizenship. Our experienced attorneys will provide expert advice, diligent representation, and compassionate support throughout the naturalization process. We understand the significance of this milestone and are dedicated to helping you navigate the complexities of becoming a U.S. citizen.",
         "Contact us today to schedule a consultation and let us assist you in realizing your dream of becoming a U.S. citizen and enjoying the rights and privileges that come with it.",
       ],
     },
@@ -48,7 +48,7 @@ const WorkVisas = ({ setShowPayment }) => {
       title: "Investment",
       modalHead: "Investment Visas",
       description: [
-        "Unlocking business opportunities and investing in the United States can open doors to a world of possibilities. At Lexom Law, we specialize in investment visas, providing comprehensive legal services to individuals and businesses seeking to capitalize on the vibrant U.S. market.",
+        "Unlocking business opportunities and investing in the United States can open doors to a world of possibilities. At My Immigration Hub, we specialize in investment visas, providing comprehensive legal services to individuals and businesses seeking to capitalize on the vibrant U.S. market.",
         "Navigating the complex landscape of investment visas requires in-depth knowledge and a thorough understanding of immigration laws and regulations. Our experienced team of attorneys stays up to date with the latest developments and policies to offer you cutting-edge advice and guidance.	",
         "We assist individuals and entrepreneurs from around the world in obtaining the appropriate investment visa for their specific needs. Some of the common investment visa categories we handle include:",
         "EB-5 Immigrant Investor Visa: The EB-5 program allows foreign investors to obtain lawful permanent residency in the United States by making a qualifying investment and creating a specific number of jobs. We can guide you through the entire EB-5 process, from selecting suitable investment opportunities to filing the necessary petitions and navigating the rigorous requirements.",
@@ -64,14 +64,14 @@ const WorkVisas = ({ setShowPayment }) => {
       title: "Assylum",
       modalHead: "Assylum",
       description: [
-        "At Lexom Law, we are committed to protecting the rights of individuals fleeing persecution and seeking safety in the United States. Our dedicated team of immigration attorneys specializes in asylum and refugee law, providing comprehensive legal services to those seeking protection and a new beginning.",
+        "At My Immigration Hub, we are committed to protecting the rights of individuals fleeing persecution and seeking safety in the United States. Our dedicated team of immigration attorneys specializes in asylum and refugee law, providing comprehensive legal services to those seeking protection and a new beginning.",
         "The asylum and refugee process can be complex and daunting, requiring a deep understanding of immigration laws, international human rights, and the specific challenges faced by individuals fleeing their home countries. Our experienced attorneys are knowledgeable in these areas and stay updated with the latest developments and policies to offer you the highest level of representation.",
         "We offer assistance to individuals seeking asylum or refugee status in the United States, guiding them through every step of the process. Our team will help you compile the necessary evidence, prepare a compelling case, and navigate the intricate legal requirements to present a strong application to the U.S. government.",
         "Our services in asylum and refugee law include:",
         "Asylum Petitions: If you have arrived in the United States and fear persecution in your home country based on your race, religion, nationality, political opinion, or membership in a particular social group, we can assist you in applying for asylum. Our firm will help gather supporting evidence, prepare you for interviews, and advocate for your case before the asylum officers or immigration judges.",
         "Refugee Applications: If you are currently outside the United States and meet the definition of a refugee, we can guide you through the refugee application process. Our team will help you prepare a compelling case, gather supporting documentation, and navigate the refugee resettlement procedures.",
         "We understand the challenges and emotional toll that individuals seeking asylum or refugee status face. Our compassionate approach ensures that we listen to your unique story, understand your circumstances, and provide you with the guidance and support needed to navigate the complexities of the process.",
-        "At Lexom Law we are dedicated to upholding human rights and protecting individuals in vulnerable situations. We will stand by your side, fighting for your rights and tirelessly advocating for your asylum or refugee claim.",
+        "At My Immigration Hub we are dedicated to upholding human rights and protecting individuals in vulnerable situations. We will stand by your side, fighting for your rights and tirelessly advocating for your asylum or refugee claim.",
         "If you are seeking asylum or refugee status in the United States, contact our firm today to schedule a consultation. Our experienced attorneys are here to provide the expert legal representation you need to secure a safe and promising future.",
       ],
     },
@@ -90,7 +90,7 @@ const WorkVisas = ({ setShowPayment }) => {
               <div className='content'>
                 <p>
                   Unlock limitless career opportunities and expand your
-                  professional horizons in the United States with Lexom Law. Our
+                  professional horizons in the United States with My Immigration Hub. Our
                   dedicated team of immigration law experts specializes in work
                   visas, delivering top-notch legal services to individuals and
                   businesses striving to obtain employment authorization in the
@@ -150,7 +150,7 @@ const WorkVisas = ({ setShowPayment }) => {
                   work in the United States.
                 </p>
                 <p>
-                  With Lexom Law by your side, you'll be guided through the
+                  With My Immigration Hub by your side, you'll be guided through the
                   application process with meticulous attention to detail. Our
                   attorneys will expertly prepare your petition, compile the
                   necessary supporting documents, and ensure unwavering
@@ -169,7 +169,7 @@ const WorkVisas = ({ setShowPayment }) => {
                   throughout the entire process.
                 </p>
                 <p>
-                  At Lexom Law, your triumph is our ultimate commitment. Waste
+                  At My Immigration Hub, your triumph is our ultimate commitment. Waste
                   no time – contact us today to schedule a consultation with one
                   of our seasoned attorneys and embark on the transformative
                   journey to realizing your professional goals in the United

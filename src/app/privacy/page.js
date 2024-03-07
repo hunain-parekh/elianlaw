@@ -5,9 +5,9 @@ const Privacy = () => {
   return (
     <>
       <div className='banner2'>
-        <div className="container">
-        <h1>Privacy Policies</h1>
-      </div>
+        <div className='container'>
+          <h1>Privacy Policies</h1>
+        </div>
       </div>
 
       <div className='container'>
@@ -17,10 +17,10 @@ const Privacy = () => {
               Privacy Policies
             </h1>
             <p style={{ marginBottom: "30px" }}>
-              LeximLaw ("we," "us," or "our") is committed to protecting your
-              privacy. This Privacy Policy explains how we collect, use,
-              disclose, and safeguard your personal information when you visit
-              our website or engage with our legal services
+              My Immigration Hub ("we," "us," or "our") is committed to
+              protecting your privacy. This Privacy Policy explains how we
+              collect, use, disclose, and safeguard your personal information
+              when you visit our website or engage with our legal services
             </p>
             <h4>Information We Collect</h4>
             <p style={{ marginBottom: "30px" }}>

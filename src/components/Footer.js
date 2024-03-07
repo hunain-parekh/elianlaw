@@ -8,9 +8,9 @@ const Footer = () => {
       <div className="mainFooter">
         <div className="container">
           <div className="row">
-            <div className="col-lg-3 col-12">
+            <div className="col-lg-3 col-md-4 col-12">
               <Link href="/" className="logo">
-                LEXOMLAW
+                MY IMMIGRATION HUB
               </Link>
             </div>
             <div className="col-lg-3 col-md-4 col-12">

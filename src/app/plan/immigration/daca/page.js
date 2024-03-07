@@ -15,7 +15,7 @@ const Daca = ({ setShowPayment }) => {
       title: "Citizenship",
       modalHead: "Naturalization and Obtaining Citizenship",
       description: [
-        "At Lexom Law, we understand the significance of obtaining U.S. citizenship and the rights and opportunities it affords individuals. Our firm specializes in the citizenship process, offering comprehensive legal services to help you navigate the path to becoming a U.S. citizen.",
+        "At My Immigration Hub, we understand the significance of obtaining U.S. citizenship and the rights and opportunities it affords individuals. Our firm specializes in the citizenship process, offering comprehensive legal services to help you navigate the path to becoming a U.S. citizen.",
         "The process of obtaining U.S. citizenship, also known as naturalization, involves meeting specific eligibility criteria and completing various requirements set by U.S. immigration laws. We have an in-depth understanding of the naturalization process and stay updated with the latest developments and requirements to provide you with expert guidance and representation.",
         "Our citizenship services include:",
         "Eligibility Assessment: We will carefully evaluate your eligibility for U.S. citizenship, considering factors such as your immigration status, length of residency, age, and language proficiency. We will provide a thorough analysis of your case, ensuring you meet the necessary requirements before proceeding with the naturalization process.",
@@ -23,7 +23,7 @@ const Daca = ({ setShowPayment }) => {
         "Application Filing: We will guide you through the naturalization application process, including the completion of the application for naturalization. Our firm will review your application to ensure accuracy and completeness before submitting it to the appropriate U.S. Citizenship and Immigration Services (USCIS) office.",
         "Interview Preparation: As part of the naturalization process, you will be required to attend an interview with a USCIS officer. Our firm will prepare you for the interview, familiarizing you with the types of questions that may be asked and providing guidance on how to best present your case. We will ensure that you are well-prepared and confident for this crucial step.",
         "Ongoing Support: Throughout the naturalization process, our team will provide you with personalized support and guidance. We will keep you informed about the progress of your case, address any concerns or questions you may have, and represent your best interests at every stage.",
-        "At Lexom Law, we are committed to helping you achieve your goal of U.S. citizenship. Our experienced attorneys will provide expert advice, diligent representation, and compassionate support throughout the naturalization process. We understand the significance of this milestone and are dedicated to helping you navigate the complexities of becoming a U.S. citizen.",
+        "At My Immigration Hub, we are committed to helping you achieve your goal of U.S. citizenship. Our experienced attorneys will provide expert advice, diligent representation, and compassionate support throughout the naturalization process. We understand the significance of this milestone and are dedicated to helping you navigate the complexities of becoming a U.S. citizen.",
         "Contact us today to schedule a consultation and let us assist you in realizing your dream of becoming a U.S. citizen and enjoying the rights and privileges that come with it.",
       ],
     },
@@ -47,7 +47,7 @@ const Daca = ({ setShowPayment }) => {
       title: "Student Visas",
       modalHead: "Student Visas",
       description: [
-        "At Lexom Law, we understand the significance of pursuing education in the United States and the opportunities it provides for international students. Our dedicated team of immigration attorneys specializes in student visa law and is committed to helping students from around the world navigate the process of obtaining a student visa to study in the United States.",
+        "At My Immigration Hub, we understand the significance of pursuing education in the United States and the opportunities it provides for international students. Our dedicated team of immigration attorneys specializes in student visa law and is committed to helping students from around the world navigate the process of obtaining a student visa to study in the United States.",
         "Obtaining a student visa is an essential step for individuals who wish to pursue academic or vocational studies at a U.S. educational institution. The student visa allows students to enter the United States, enroll in an approved program, and engage in their chosen course of study.",
         "Our attorneys have extensive experience in handling student visa cases and are expertise in the intricacies of the student visa process. We offer comprehensive support and guidance to help you navigate the requirements and ensure a smooth application process.",
         "Our student visa services include:",
@@ -56,7 +56,7 @@ const Daca = ({ setShowPayment }) => {
         "Application Submission: We will guide you through the process of completing the visa application forms accurately and thoroughly. Our team will ensure that all necessary documents are properly organized and submitted to the appropriate U.S. embassy or consulate in a timely manner.",
         "Interview Preparation: As part of the student visa process, you may be required to attend an interview at the U.S. embassy or consulate. Our firm will provide you with guidance on interview techniques, help you anticipate potential questions, and ensure that you are well-prepared to present your case confidently.",
         "Visa Extensions and Change of Status: If you are already studying in the United States on a student visa and need assistance with visa extensions or a change of status, we can help. Our firm will navigate the complex processes involved, ensuring your continued lawful presence in the country.",
-        "At Lexom Law, we understand the importance of your educational journey and are dedicated to helping you navigate the student visa process. Our experienced attorneys provide expert advice, diligent representation, and personalized support to ensure that your transition to studying in the United States is smooth and successful.",
+        "At My Immigration Hub, we understand the importance of your educational journey and are dedicated to helping you navigate the student visa process. Our experienced attorneys provide expert advice, diligent representation, and personalized support to ensure that your transition to studying in the United States is smooth and successful.",
         "Contact us today to schedule a consultation and let us assist you in obtaining a student visa and fulfilling your academic aspirations in the United States.",
       ],
     },
@@ -65,14 +65,14 @@ const Daca = ({ setShowPayment }) => {
       title: "Assylum",
       modalHead: "Assylum",
       description: [
-        "At Lexom Law, we are committed to protecting the rights of individuals fleeing persecution and seeking safety in the United States. Our dedicated team of immigration attorneys specializes in asylum and refugee law, providing comprehensive legal services to those seeking protection and a new beginning.",
+        "At My Immigration Hub, we are committed to protecting the rights of individuals fleeing persecution and seeking safety in the United States. Our dedicated team of immigration attorneys specializes in asylum and refugee law, providing comprehensive legal services to those seeking protection and a new beginning.",
         "The asylum and refugee process can be complex and daunting, requiring a deep understanding of immigration laws, international human rights, and the specific challenges faced by individuals fleeing their home countries. Our experienced attorneys are knowledgeable in these areas and stay updated with the latest developments and policies to offer you the highest level of representation.",
         "We offer assistance to individuals seeking asylum or refugee status in the United States, guiding them through every step of the process. Our team will help you compile the necessary evidence, prepare a compelling case, and navigate the intricate legal requirements to present a strong application to the U.S. government.",
         "Our services in asylum and refugee law include:",
         "Asylum Petitions: If you have arrived in the United States and fear persecution in your home country based on your race, religion, nationality, political opinion, or membership in a particular social group, we can assist you in applying for asylum. Our firm will help gather supporting evidence, prepare you for interviews, and advocate for your case before the asylum officers or immigration judges.",
         "Refugee Applications: If you are currently outside the United States and meet the definition of a refugee, we can guide you through the refugee application process. Our team will help you prepare a compelling case, gather supporting documentation, and navigate the refugee resettlement procedures.",
         "We understand the challenges and emotional toll that individuals seeking asylum or refugee status face. Our compassionate approach ensures that we listen to your unique story, understand your circumstances, and provide you with the guidance and support needed to navigate the complexities of the process.",
-        "At Lexom Law we are dedicated to upholding human rights and protecting individuals in vulnerable situations. We will stand by your side, fighting for your rights and tirelessly advocating for your asylum or refugee claim.",
+        "At My Immigration Hub we are dedicated to upholding human rights and protecting individuals in vulnerable situations. We will stand by your side, fighting for your rights and tirelessly advocating for your asylum or refugee claim.",
         "If you are seeking asylum or refugee status in the United States, contact our firm today to schedule a consultation. Our experienced attorneys are here to provide the expert legal representation you need to secure a safe and promising future.",
       ],
     },
@@ -92,7 +92,7 @@ const Daca = ({ setShowPayment }) => {
             <div className='col-12'>
               <div className='content'>
                 <p>
-                  At Lexom Law, we understand the importance of the DACA
+                  At My Immigration Hub, we understand the importance of the DACA
                   (Deferred Action for Childhood Arrivals) program and the
                   opportunities it provides for eligible individuals who were
                   brought to the United States as children. Our dedicated team
@@ -156,7 +156,7 @@ const Daca = ({ setShowPayment }) => {
                   your DACA status.
                 </p>
                 <p>
-                  At Lexom Law, we understand the importance of the DACA program
+                  At My Immigration Hub, we understand the importance of the DACA program
                   in providing relief and opportunities for Dreamers. Our
                   experienced attorneys are committed to helping eligible
                   individuals navigate the DACA process and secure the

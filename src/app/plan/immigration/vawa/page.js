@@ -15,7 +15,7 @@ const Vawa = ({ setShowPayment }) => {
       title: "Citizenship",
       modalHead: "Naturalization and Obtaining Citizenship",
       description: [
-        "At Lexom Law, we understand the significance of obtaining U.S. citizenship and the rights and opportunities it affords individuals. Our firm specializes in the citizenship process, offering comprehensive legal services to help you navigate the path to becoming a U.S. citizen.",
+        "At My Immigration Hub, we understand the significance of obtaining U.S. citizenship and the rights and opportunities it affords individuals. Our firm specializes in the citizenship process, offering comprehensive legal services to help you navigate the path to becoming a U.S. citizen.",
         "The process of obtaining U.S. citizenship, also known as naturalization, involves meeting specific eligibility criteria and completing various requirements set by U.S. immigration laws. We have an in-depth understanding of the naturalization process and stay updated with the latest developments and requirements to provide you with expert guidance and representation.",
         "Our citizenship services include:",
         "Eligibility Assessment: We will carefully evaluate your eligibility for U.S. citizenship, considering factors such as your immigration status, length of residency, age, and language proficiency. We will provide a thorough analysis of your case, ensuring you meet the necessary requirements before proceeding with the naturalization process.",
@@ -23,7 +23,7 @@ const Vawa = ({ setShowPayment }) => {
         "Application Filing: We will guide you through the naturalization application process, including the completion of the application for naturalization. Our firm will review your application to ensure accuracy and completeness before submitting it to the appropriate U.S. Citizenship and Immigration Services (USCIS) office.",
         "Interview Preparation: As part of the naturalization process, you will be required to attend an interview with a USCIS officer. Our firm will prepare you for the interview, familiarizing you with the types of questions that may be asked and providing guidance on how to best present your case. We will ensure that you are well-prepared and confident for this crucial step.",
         "Ongoing Support: Throughout the naturalization process, our team will provide you with personalized support and guidance. We will keep you informed about the progress of your case, address any concerns or questions you may have, and represent your best interests at every stage.",
-        "At Lexom Law, we are committed to helping you achieve your goal of U.S. citizenship. Our experienced attorneys will provide expert advice, diligent representation, and compassionate support throughout the naturalization process. We understand the significance of this milestone and are dedicated to helping you navigate the complexities of becoming a U.S. citizen.",
+        "At My Immigration Hub, we are committed to helping you achieve your goal of U.S. citizenship. Our experienced attorneys will provide expert advice, diligent representation, and compassionate support throughout the naturalization process. We understand the significance of this milestone and are dedicated to helping you navigate the complexities of becoming a U.S. citizen.",
         "Contact us today to schedule a consultation and let us assist you in realizing your dream of becoming a U.S. citizen and enjoying the rights and privileges that come with it.",
       ],
     },
@@ -47,7 +47,7 @@ const Vawa = ({ setShowPayment }) => {
       title: "Work Visas",
       modalHead: "Work Visas",
       description: [
-        "At our firm Lexom Law, we understand the importance of pursuing career opportunities and expanding your professional horizons in the United States. Our immigration law experts specialize in work visas, providing comprehensive legal services to individuals and businesses seeking to obtain employment authorization in the U.S.",
+        "At our firm My Immigration Hub, we understand the importance of pursuing career opportunities and expanding your professional horizons in the United States. Our immigration law experts specialize in work visas, providing comprehensive legal services to individuals and businesses seeking to obtain employment authorization in the U.S.",
         "Navigating the complex landscape of work visas requires in-depth knowledge and a thorough understanding of immigration laws and regulations. Our experienced team of attorneys stays up to date with the latest developments and policies to offer you cutting-edge advice and guidance.",
         "We assist individuals from diverse professional backgrounds, including skilled workers, professionals, investors, and multinational executives, in obtaining the appropriate work visa for their specific needs. Some of the common work visa categories we handle include:",
         "H-1B Visa: Designed for professionals in specialty occupations, the H-1B visa allows U.S. employers to hire foreign workers in fields such as IT, engineering, medicine, and more.",
@@ -57,7 +57,7 @@ const Vawa = ({ setShowPayment }) => {
         "TN Visa: Under the North American Free Trade Agreement (NAFTA), Canadian and Mexican professionals in specific occupations can obtain the TN visa to work in the United States temporarily.",
         "Our firm will guide you through the application process, meticulously preparing your petition, supporting documents, and ensuring compliance with all requirements. We understand the significance of your career aspirations and strive to present a strong case that increases your chances of obtaining a favorable outcome.",
         "Whether you are an individual seeking employment in the United States or a business looking to hire foreign talent, we offer strategic advice tailored to your unique circumstances. We work closely with you to understand your goals and objectives, providing expert guidance and representation throughout the entire process.",
-        "At Lexom Law, we are committed to your success. Contact us today to schedule a consultation with one of our experienced attorneys and take the first step towards realizing your professional goals in the United States.",
+        "At My Immigration Hub, we are committed to your success. Contact us today to schedule a consultation with one of our experienced attorneys and take the first step towards realizing your professional goals in the United States.",
       ],
     },
     {
@@ -65,7 +65,7 @@ const Vawa = ({ setShowPayment }) => {
       title: "DACA",
       modalHead: "DACA",
       description: [
-        "At Lexom Law, we understand the importance of the DACA (Deferred Action for Childhood Arrivals) program and the opportunities it provides for eligible individuals who were brought to the United States as children. Our dedicated team of immigration attorneys specializes in DACA law and is committed to helping eligible individuals navigate the DACA process to obtain protection from deportation and work authorization.",
+        "At My Immigration Hub, we understand the importance of the DACA (Deferred Action for Childhood Arrivals) program and the opportunities it provides for eligible individuals who were brought to the United States as children. Our dedicated team of immigration attorneys specializes in DACA law and is committed to helping eligible individuals navigate the DACA process to obtain protection from deportation and work authorization.",
         "DACA is a program that offers temporary relief from deportation and provides eligible individuals, often referred to as Dreamers, with work authorization. It allows young people who meet specific criteria to remain in the United States, pursue education, and contribute to their communities without the constant fear of removal.",
         "Our firm have a deep understanding of the DACA program, and the requirements involved. We are dedicated to guiding you through the DACA application process, ensuring that your rights are protected, and advocating for your case with expertise and compassion.",
         "Our DACA services include:",
@@ -74,7 +74,7 @@ const Vawa = ({ setShowPayment }) => {
         "Submission and Follow-Up: We will submit your DACA application on your behalf to the appropriate U.S. Citizenship and Immigration Services (USCIS) office. Our team will closely monitor the progress of your application, respond to any requests for additional information, and ensure that your case moves forward smoothly and efficiently.",
         "Renewals and Updates: If you are already a DACA recipient, we can assist you with the renewal process to ensure that your protection and work authorization remain valid. Additionally, we can help you with any updates or changes to your DACA status, such as updating your address or obtaining a new employment authorization document (EAD).",
         "Ongoing Support: Our dedicated team will provide ongoing support throughout your DACA journey. We will address any questions or concerns you may have, keep you informed about the latest developments, and provide guidance on maintaining your DACA status.",
-        "At Lexom Law, we understand the importance of the DACA program in providing relief and opportunities for Dreamers. Our experienced attorneys are committed to helping eligible individuals navigate the DACA process and secure the protection and work authorization they deserve.",
+        "At My Immigration Hub, we understand the importance of the DACA program in providing relief and opportunities for Dreamers. Our experienced attorneys are committed to helping eligible individuals navigate the DACA process and secure the protection and work authorization they deserve.",
         "If you believe you may be eligible for DACA or need assistance with a DACA application or renewal, contact our firm today to schedule a consultation. We are here to guide you through the process, provide dedicated support, and help you pursue your dreams in the United States.",
       ],
     },
@@ -93,7 +93,7 @@ const Vawa = ({ setShowPayment }) => {
             <div className='col-12'>
               <div className='content'>
                 <p>
-                  Unlock a pathway to safety and independence. At Lexom Law, we
+                  Unlock a pathway to safety and independence. At My Immigration Hub, we
                   are deeply committed to assisting survivors of domestic
                   violence, abuse, and certain crimes through the VAWA (Violence
                   Against Women Act) immigration process. Our compassionate team
@@ -153,7 +153,7 @@ const Vawa = ({ setShowPayment }) => {
                   safeguarding your rights every step of the way.
                 </p>
                 <p>
-                  At Lexom Law, we are resolute in empowering survivors of
+                  At My Immigration Hub, we are resolute in empowering survivors of
                   domestic violence and abuse through the VAWA immigration
                   process. Our compassionate team provides unwavering legal
                   representation, ensuring that your story is heard, and your

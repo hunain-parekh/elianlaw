@@ -23,13 +23,13 @@ const Immigration = () => {
                 <p>
                   With specialized expertise in immigration law, as well as
                   strong foundation in corporate law, commercial law, employment
-                  law, intellectual property, and regulatory compliance, Lexom
-                  Law provides a comprehensive range of services dedicated to
+                  law, intellectual property, and regulatory compliance, My Immigration Hub
+                  provides a comprehensive range of services dedicated to
                   protecting your interests and ensuring compliance with
                   immigration regulations.
                 </p>
                 <p>
-                  At Lexom Law, our client-centric approach lies at the core of
+                  At My Immigration Hub, our client-centric approach lies at the core of
                   our immigration law practice. We understand that each
                   immigration case is unique, and we take the time to grasp your
                   specific needs and goals, delivering practical and effective
@@ -40,7 +40,7 @@ const Immigration = () => {
                 </p>
                 <p>
                   Take the first step towards achieving your immigration goals.
-                  Contact Lexom Law today to schedule a consultation with us.
+                  Contact My Immigration Hub today to schedule a consultation with us.
                   Discover how our trusted legal counsel can help navigate the
                   complexity of immigration law.{" "}
                 </p>

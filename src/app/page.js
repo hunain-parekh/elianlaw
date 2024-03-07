@@ -72,7 +72,7 @@ const Home = () => {
       </div>
       <section className='aboutUsSec'>
         <div className='container'>
-          <h1 className='sHeading'>Introducing Lexom Law</h1>
+          <h1 className='sHeading'>Introducing My Immigration Hub</h1>
           <p style={{ textAlign: "justify" }}>
             Where age-old tradition meets modern ambition, Lexom Law stands at
             the crossroads of dreams and reality. Our name, a blend of the Latin

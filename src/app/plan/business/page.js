@@ -19,14 +19,14 @@ const Business = () => {
               <div className='content'>
                 <p>
                   Unlock the full potential of your business with the expertise
-                  of Lexom Law. Our team of seasoned attorneys specializes in
+                  of My Immigration Hub. Our team of seasoned attorneys specializes in
                   corporate law, commercial law, employment law, intellectual
                   property, and regulatory compliance. With a comprehensive
                   range of services, we are dedicated to safeguarding your
                   interests and ensuring steadfast compliance with the law.{" "}
                 </p>
                 <p>
-                  At Lexom Law, our client-centric approach lies at the heart of
+                  At My Immigration Hub, our client-centric approach lies at the heart of
                   everything we do. We take the time to understand your unique
                   needs and goals, allowing us to deliver practical and
                   effective legal solutions tailored specifically to your
@@ -36,7 +36,7 @@ const Business = () => {
                 </p>
                 <p>
                   Take the first step towards unleashing your business’s
-                  potential. Contact Lexom Law today to schedule a consultation
+                  potential. Contact My Immigration Hub today to schedule a consultation
                   with our experienced attorneys. Discover how our trusted legal
                   consult can help your business thrive in today’s competitive
                   environment.

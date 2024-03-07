@@ -19,7 +19,7 @@ const FamilyVisas = ({ setShowPayment }) => {
               <div className='content'>
                 <p>
                   Reuniting families is not just our expertise - it’s our
-                  passion. At Lexom Law, we understand the deep importance of
+                  passion. At My Immigration Hub, we understand the deep importance of
                   family and the desire to be together. That’s why we’ve made
                   family-based immigration our specialty, dedicated to helping
                   individuals navigate the process of bringing their loved ones
