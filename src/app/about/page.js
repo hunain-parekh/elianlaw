@@ -16,7 +16,7 @@ const About = () => {
         <div className='container'>
           <div className='row'>
             <div className='col-md-6'>
-              <h1 className={style.sHeading}>Introducing Lexom Law</h1>
+              <h1 className={style.sHeading}>Introducing My Immigration Hub</h1>
               <p style={{ textAlign: "justify" }}>
                 Where age-old tradition meets modern ambition, Lexom Law stands
                 at the crossroads of dreams and reality. Our name, a blend of
