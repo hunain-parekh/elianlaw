@@ -52,7 +52,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="miniFooter">Copyright - 2023</div>
+      <div className="miniFooter">&#169; Copyright - 2024</div>
     </footer>
   );
 };
