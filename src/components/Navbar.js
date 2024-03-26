@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "@/assets/images/logo.png";
+import Logo from "@/assets/images/logo2.0.png";
 
 const Navbar = () => {
   const [checkCount, setCheckCount] = useState(0);
@@ -52,7 +52,7 @@ const Navbar = () => {
     <nav className='navbar navbar-expand-lg'>
       <div className='container'>
         <Link className='navbar-brand' href='/'>
-          <Image src={Logo} height={80} width={150} alt='logo' />
+          <Image src={Logo} height={100} width={100} alt='logo' />
         </Link>
         <button
           className='navbar-toggler'

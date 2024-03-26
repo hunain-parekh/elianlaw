@@ -17,6 +17,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
+      <head>
+        <link rel="icon" href="/src/assets/images/logo2.0.png" />
+      </head>
       <body className={inter.className} id="root">
       <Bootstrap/>
         <Navbar />
