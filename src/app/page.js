@@ -12,7 +12,6 @@ const Home = () => {
     {
       name: "Business Law",
       path: "/plan/business",
-      
     },
     {
       name: "Immigration",
@@ -74,23 +73,25 @@ const Home = () => {
         <div className='container'>
           <h1 className='sHeading'>Introducing My Immigration Hub</h1>
           <p style={{ textAlign: "justify" }}>
-            Where age-old tradition meets modern ambition, Lexom Law stands at
-            the crossroads of dreams and reality. Our name, a blend of the Latin
-            "Lex" for "law" and the essence of "Omnia" meaning "all", symbolizes
-            our commitment to serve everyone, especially those with a vision.
+            For any immigration matter you may be experiencing, our team of
+            experienced professionals is here to provide personalized assistance
+            tailored to your needs. With a commitment to affordability, we
+            strive to ensure that navigating the complexities of immigration
+            processes is both accessible and stress-free for you. Call us today
+            to ask your questions and take the first step towards achieving your
+            immigration goals with confidence.
             <br />
             <br />
             For the budding entrepreneur, the passionate small business, or the
             hopeful individual seeking a brighter future on American shores, we
             are your bridge. In the intricate realms of business and immigration
-            law, Lexom is not just a law firm—it's a partner in your journey.
+            law, My Immigration Hub is not just a law firm—it's a partner in your journey.
             <br />
             <br />
             We understand the dreams that drive you, and with our transparent
             subscription and flat fee models, we make sure that achieving them
-            doesn’t come with unforeseen legal costs. At Lexom, we don’t just
-            provide legal services; we champion aspirations. Welcome to Lexom
-            Law – Where Dreams Meet Determined Advocacy.
+            doesn’t come with unforeseen legal costs. At My Immigration Hub, we don’t just
+            provide legal services; we champion aspirations. Welcome to My Immigration Hub – Where Dreams Meet Determined Advocacy.
           </p>
         </div>
       </section>
