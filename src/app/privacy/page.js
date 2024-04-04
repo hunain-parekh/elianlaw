@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
+import Link from 'next/link'
 
 const Privacy = () => {
   return (
@@ -102,8 +103,7 @@ const Privacy = () => {
             <h4>Contact Us</h4>
             <p style={{ marginBottom: "30px" }}>
               If you have any questions or concerns about our Privacy Policy or
-              your personal information, please contact us at
-              [LexomLaw Email Address].
+              your personal information, please contact us at <a href= "mailto:elina@myimmigrationhub.com">elina@myimmigrationhub.com</a>.
             </p>
           </div>
         </div>
