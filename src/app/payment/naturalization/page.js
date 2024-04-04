@@ -3,6 +3,7 @@ import React from "react";
 import checkIco from "@/assets/images/checkIco.svg";
 import StripeCheckout from "react-stripe-checkout";
 import Image from "next/image";
+import { checkout } from "@/checkout";
 
 const NaturalizationPayment = () => {
   const onToken = (token) => {
@@ -30,7 +31,7 @@ const NaturalizationPayment = () => {
             <div className='col-md-6 mb-4'>
               <div className='planCardMain'>
                 <div className='planCard'>
-                  <div className='head'>Plan 1 ( 1 months )</div>
+                  <div className='head'>Plan 1 ( Monthly )</div>
                   <div className='cardMain'>
                     {case1.plan1.description.map((item, key) => (
                       <div
@@ -49,15 +50,16 @@ const NaturalizationPayment = () => {
                   </div>
                 </div>
                 <div className='text-center mt-4'>
-                  <StripeCheckout
-                    name='Lexim Law'
-                    token={onToken}
-                    stripeKey={process.env.NEXT_PUBLIC_STRIPE_PRIVATE_KEY}
-                    amount={266 * 100}
-                    currency='USD'
-                  >
-                    <button className='planBtn'>$400 monthly </button>
-                  </StripeCheckout>
+                    <button className='planBtn' onClick={() => {
+                      checkout({
+                        lineItems: [
+                          {
+                            price: "price_1P1dFeRpSBYSRDXF2IV1eOrD",
+                            quantity: 1,
+                          },
+                        ],
+                      });
+                    }}>$400 monthly </button>
                 </div>
               </div>
             </div>
@@ -83,29 +85,19 @@ const NaturalizationPayment = () => {
                   </div>
                 </div>
                 <div className='text-center mt-4'>
-                  <StripeCheckout
-                    name='Lexim Law'
-                    token={onToken}
-                    stripeKey={process.env.NEXT_PUBLIC_STRIPE_PRIVATE_KEY}
-                    amount={266 * 100}
-                    currency='USD'
-                  >
-                    <button className='planBtn'>$220 monthly </button>
-                  </StripeCheckout>
+                    <button className='planBtn' onClick={() => {
+                      checkout({
+                        mode: "subscription",
+                        lineItems: [
+                          {
+                            price: "price_1P1dG2RpSBYSRDXF5WiQMvli",
+                            quantity: 1,
+                          },
+                        ],
+                      });
+                    }}>$220 monthly </button>
                 </div>
               </div>
-            </div>
-          </div>
-          <h4 className='discount'>
-            Expedited Process All Upfront for 10% discount.
-          </h4>
-
-          <div className='btns-after-family2'>
-            <div className='dist-btn1'>
-              <button className='planBtn'>$360 (After Discount)</button>
-            </div>
-            <div className='dist-btn2'>
-              <button className='planBtn'>$594 (After Discount)</button>
             </div>
           </div>
         </div>

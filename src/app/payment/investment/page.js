@@ -1,40 +1,38 @@
 "use client";
 import React from "react";
 import checkIco from "@/assets/images/checkIco.svg";
-import StripeCheckout from "react-stripe-checkout";
 import Image from "next/image";
+import { checkout } from "@/checkout";
+
 const InvestmentPayment = () => {
-  const onToken = (token) => {
-    console.log(token);
-  };
   return (
-    <div className='paymentPage'>
-      <div className='banner'>
-        <div className='container'>
+    <div className="paymentPage">
+      <div className="banner">
+        <div className="container">
           <h1>Investment Visas</h1>
         </div>
       </div>
 
-      <div className='accordion' id='myAccordion'>
-        <div className='accordion-item'>
-          <div className='planMain'>
-            <div className='container'>
+      <div className="accordion" id="myAccordion">
+        <div className="accordion-item">
+          <div className="planMain">
+            <div className="container">
               <div
-                className='mb-4 accordion-button'
-                data-bs-toggle='collapse'
-                data-bs-target='#collapseOne'
+                className="mb-4 accordion-button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
               >
-                <div className='w-100'>
-                  <div className='mHeading'>EB5</div>
+                <div className="w-100">
+                  <div className="mHeading">EB5</div>
                 </div>
               </div>
 
               <div
-                id='collapseOne'
-                className='accordion-collapse collapse show'
-                data-bs-parent='#myAccordion'
+                id="collapseOne"
+                className="accordion-collapse collapse show"
+                data-bs-parent="#myAccordion"
               >
-                <div className='description'>
+                <div className="description">
                   {/* <ul>
                         <li>I a BP needed, then it would be $3500. if you choose to invest in a regional plan ($800k), the regional center will provide you with the business plan and other nesessory project documents.</li>
                         <li>If you want to direct investment ($1.8M), then you will need to set up a business entity fee.</li>
@@ -59,15 +57,15 @@ const InvestmentPayment = () => {
                     on the Regional Center.
                   </h5>
                 </div>
-                <div className='row'>
-                  <div className='col mb-4'>
-                    <div className='planCardMain'>
-                      <div className='planCard'>
-                        <div className='head'>Plan years / 2+month</div>
-                        <div className='cardMain'>
-                          <div className='mb-4'>
-                            <div className='price'>{plan1.price}</div>
-                            <div className='time'>{plan1.time}</div>
+                <div className="row">
+                  <div className="col mb-4">
+                    <div className="planCardMain">
+                      <div className="planCard">
+                        <div className="head">Plan years / 2+month</div>
+                        <div className="cardMain">
+                          <div className="mb-4">
+                            <div className="price">{plan1.price}</div>
+                            <div className="time">{plan1.time}</div>
                           </div>
                           {plan1.description.map((item, key) => (
                             <div
@@ -76,27 +74,34 @@ const InvestmentPayment = () => {
                                 item?.title ? "poinM" : "poinM jc-center"
                               }
                             >
-                              <div className='check'>
-                                <Image src={checkIco} alt='' />
+                              <div className="check">
+                                <Image src={checkIco} alt="" />
                               </div>
                               <div>
-                                <div className='title'>{item?.title}</div>
-                                <div className='detail'>{item?.desc}</div>
+                                <div className="title">{item?.title}</div>
+                                <div className="detail">{item?.desc}</div>
                               </div>
                             </div>
                           ))}
                         </div>
                       </div>
-                      <div className='text-center mt-4'>
-                        <StripeCheckout
-                          name='Lexim Law'
-                          token={onToken}
-                          stripeKey={process.env.NEXT_PUBLIC_STRIPE_PRIVATE_KEY}
-                          amount={1041 * 100}
-                          currency='USD'
+                      <div className="text-center mt-4">
+                        <button
+                          className="planBtn"
+                          onClick={() => {
+                            checkout({
+                              mode: "subscription",
+                              lineItems: [
+                                {
+                                  price: "price_1P1eo4RpSBYSRDXF8TL3zB24",
+                                  quantity: 1,
+                                },
+                              ],
+                            });
+                          }}
                         >
-                          <button className='planBtn'>$1041 monthly</button>
-                        </StripeCheckout>
+                          $1041 monthly
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -112,33 +117,33 @@ const InvestmentPayment = () => {
 
                 </div> */}
 
-          <div className='planMain'>
-            <div className='container'>
+          <div className="planMain">
+            <div className="container">
               <div
-                className='mb-4 accordion-button'
-                data-bs-toggle='collapse'
-                data-bs-target='#collapseTwo'
+                className="mb-4 accordion-button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
               >
-                <div className='w-100'>
-                  <div className='mHeading'>E2 Visa</div>
+                <div className="w-100">
+                  <div className="mHeading">E2 Visa</div>
                 </div>
               </div>
 
               <div
-                id='collapseTwo'
-                className='accordion-collapse collapse '
-                data-bs-parent='#myAccordion'
+                id="collapseTwo"
+                className="accordion-collapse collapse "
+                data-bs-parent="#myAccordion"
               >
-                <div className='description'>
+                <div className="description">
                   <h5>The USCIS filing fee: $960</h5>
                   <h5>The USCIS expedited fee for I-907: $2500</h5>
                 </div>
-                <div className='row'>
-                  <div className='col-lg-4 col-md-6 mb-4'>
-                    <div className='planCardMain'>
-                      <div className='planCard'>
-                        <div className='head'>Plan 1 ( 3 month )</div>
-                        <div className='cardMain'>
+                <div className="row">
+                  <div className="col-lg-4 col-md-6 mb-4">
+                    <div className="planCardMain">
+                      <div className="planCard">
+                        <div className="head">Plan 1 ( 3 month )</div>
+                        <div className="cardMain">
                           {case2.plan1.description.map((item, key) => (
                             <div
                               key={key}
@@ -146,37 +151,42 @@ const InvestmentPayment = () => {
                                 item?.title ? "poinM" : "poinM jc-center"
                               }
                             >
-                              <div className='check'>
-                                <Image src={checkIco} alt='' />
+                              <div className="check">
+                                <Image src={checkIco} alt="" />
                               </div>
                               <div>
-                                <div className='title'>{item?.title}</div>
-                                <div className='detail'>{item?.desc}</div>
+                                <div className="title">{item?.title}</div>
+                                <div className="detail">{item?.desc}</div>
                               </div>
                             </div>
                           ))}
                         </div>
                       </div>
-                      <div className='text-center mt-4'>
-                        <StripeCheckout
-                          name='Lexim Law'
-                          token={onToken}
-                          stripeKey={process.env.NEXT_PUBLIC_STRIPE_PRIVATE_KEY}
-                          amount={266 * 100}
-                          currency='USD'
+                      <div className="text-center mt-4">
+                        <button
+                          className="planBtn"
+                          onClick={() => {
+                            checkout({
+                              mode: "subscription",
+                              lineItems: [
+                                {
+                                  price: "price_1P1epbRpSBYSRDXF4s4wcwbP",
+                                  quantity: 1,
+                                },
+                              ],
+                            });
+                          }}
                         >
-                          <button className='planBtn'>
-                            $1500 monthly <br /> total $4500{" "}
-                          </button>
-                        </StripeCheckout>
+                          $1500 monthly <br /> total $4500{" "}
+                        </button>
                       </div>
                     </div>
                   </div>
-                  <div className='col-lg-4 col-md-6 mb-4'>
-                    <div className='planCardMain'>
-                      <div className='planCard'>
-                        <div className='head'>Plan 2 ( 3 month )</div>
-                        <div className='cardMain'>
+                  <div className="col-lg-4 col-md-6 mb-4">
+                    <div className="planCardMain">
+                      <div className="planCard">
+                        <div className="head">Plan 2 ( 3 month )</div>
+                        <div className="cardMain">
                           {case2.plan2.description.map((item, key) => (
                             <div
                               key={key}
@@ -184,37 +194,42 @@ const InvestmentPayment = () => {
                                 item?.title ? "poinM" : "poinM jc-center"
                               }
                             >
-                              <div className='check'>
-                                <Image src={checkIco} alt='' />
+                              <div className="check">
+                                <Image src={checkIco} alt="" />
                               </div>
                               <div>
-                                <div className='title'>{item?.title}</div>
-                                <div className='detail'>{item?.desc}</div>
+                                <div className="title">{item?.title}</div>
+                                <div className="detail">{item?.desc}</div>
                               </div>
                             </div>
                           ))}
                         </div>
                       </div>
-                      <div className='text-center mt-4'>
-                        <StripeCheckout
-                          name='Lexim Law'
-                          token={onToken}
-                          stripeKey={process.env.NEXT_PUBLIC_STRIPE_PRIVATE_KEY}
-                          amount={266 * 100}
-                          currency='USD'
+                      <div className="text-center mt-4">
+                        <button
+                          className="planBtn"
+                          onClick={() => {
+                            checkout({
+                              mode: "subscription",
+                              lineItems: [
+                                {
+                                  price: "price_1P1epvRpSBYSRDXF0uuwhjPm",
+                                  quantity: 1,
+                                },
+                              ],
+                            });
+                          }}
                         >
-                          <button className='planBtn'>
-                            $1083 monthly <br /> total $6499{" "}
-                          </button>
-                        </StripeCheckout>
+                          $1083 monthly <br /> total $6499{" "}
+                        </button>
                       </div>
                     </div>
                   </div>
-                  <div className='col-lg-4 col-md-6 mb-4'>
-                    <div className='planCardMain'>
-                      <div className='planCard'>
-                        <div className='head'>Plan 3 ( 12 month )</div>
-                        <div className='cardMain'>
+                  <div className="col-lg-4 col-md-6 mb-4">
+                    <div className="planCardMain">
+                      <div className="planCard">
+                        <div className="head">Plan 3 ( 12 month )</div>
+                        <div className="cardMain">
                           {case2.plan3.description.map((item, key) => (
                             <div
                               key={key}
@@ -222,36 +237,41 @@ const InvestmentPayment = () => {
                                 item?.title ? "poinM" : "poinM jc-center"
                               }
                             >
-                              <div className='check'>
-                                <Image src={checkIco} alt='' />
+                              <div className="check">
+                                <Image src={checkIco} alt="" />
                               </div>
                               <div>
-                                <div className='title'>{item?.title}</div>
-                                <div className='detail'>{item?.desc}</div>
+                                <div className="title">{item?.title}</div>
+                                <div className="detail">{item?.desc}</div>
                               </div>
                             </div>
                           ))}
                         </div>
                       </div>
-                      <div className='text-center mt-4'>
-                        <StripeCheckout
-                          name='Lexim Law'
-                          token={onToken}
-                          stripeKey={process.env.NEXT_PUBLIC_STRIPE_PRIVATE_KEY}
-                          amount={266 * 100}
-                          currency='USD'
+                      <div className="text-center mt-4">
+                        <button
+                          className="planBtn"
+                          onClick={() => {
+                            checkout({
+                              mode: "subscription",
+                              lineItems: [
+                                {
+                                  price: "price_1P1eqERpSBYSRDXF3Rgu0rJr",
+                                  quantity: 1,
+                                },
+                              ],
+                            });
+                          }}
                         >
-                          <button className='planBtn'>
-                            $541 monthly <br /> total $6999{" "}
-                          </button>
-                        </StripeCheckout>
+                          $541 monthly <br /> total $6999{" "}
+                        </button>
                       </div>
                     </div>
                   </div>
                 </div>
-                <h4 className='discount'>
+                {/* <h4 className='discount'>
                   Expedited Process All Upfront for $5850 (10% discount)
-                </h4>
+                </h4> */}
               </div>
             </div>
           </div>
@@ -263,114 +283,106 @@ const InvestmentPayment = () => {
 
 export default InvestmentPayment;
 
-
-const plan1 ={
-    description:[
-        {
-            title:"Unlimited Legal Advice",
-        },
-        {
-            title:"Unlimited Documents Review",
-        },
-        {
-            title:"Final Business Plan Review",
-        },
-        {
-            title:"Final Applications Review",
-        },
-       
-
-    ]
-}
-
-
-
-
-const case2={
-    plan1: {
-        description:[
-            {
-                title:"Unlimited Legal Advice",
-            },
-            {
-                title:"Unlimited Documents Review",
-            },
-            {
-                title:"Final Business Plan Review ",
-            },
-            {
-                title:"Final Applications Review",
-            },
-           
-        
-        ]
+const plan1 = {
+  description: [
+    {
+      title: "Unlimited Legal Advice",
     },
-    plan2: {
-        description:[
-            {
-                title:"Unlimited Legal Advice",
-            },
-            {
-                title:"Unlimited Documents Review",
-            },
-            {
-                title:"Writing Business Plan ($1000) ",
-            },
-            {
-                title:"Establishing a US Company ($1500)",
-            },
-            {
-                title:"Filing the Case",
-            },
-            {
-                title:"Inquiries from USCIS and NVC",
-            },
-            {
-                title:"Strategic Guidence in Your Case",
-            },
-            {
-                title:"Responding to RFEs",
-            },
-            {
-                title:"Appeal the Case",
-            },
-            {
-                title:"Proactive Legal Protection",
-            },
-        ]
+    {
+      title: "Unlimited Documents Review",
     },
-    plan3: {
-        description:[
-            {
-                title:"Unlimited Legal Advice",
-            },
-            {
-                title:"Unlimited Documents Review",
-            },
-            {
-                title:"Writing Business Plan ($1000) ",
-            },
-            {
-                title:"Establishing a US Company ($1500)",
-            },
-            {
-                title:"Filing the Case",
-            },
-            {
-                title:"Inquiries from USCIS and NVC",
-            },
-            {
-                title:"Strategic Guidence in Your Case",
-            },
-            {
-                title:"Responding to RFEs",
-            },
-            {
-                title:"Appeal the Case",
-            },
-            {
-                title:"Proactive Legal Protection",
-            },
-        ]
+    {
+      title: "Final Business Plan Review",
     },
-}
+    {
+      title: "Final Applications Review",
+    },
+  ],
+};
+
+const case2 = {
+  plan1: {
+    description: [
+      {
+        title: "Unlimited Legal Advice",
+      },
+      {
+        title: "Unlimited Documents Review",
+      },
+      {
+        title: "Final Business Plan Review ",
+      },
+      {
+        title: "Final Applications Review",
+      },
+    ],
+  },
+  plan2: {
+    description: [
+      {
+        title: "Unlimited Legal Advice",
+      },
+      {
+        title: "Unlimited Documents Review",
+      },
+      {
+        title: "Writing Business Plan ($1000) ",
+      },
+      {
+        title: "Establishing a US Company ($1500)",
+      },
+      {
+        title: "Filing the Case",
+      },
+      {
+        title: "Inquiries from USCIS and NVC",
+      },
+      {
+        title: "Strategic Guidence in Your Case",
+      },
+      {
+        title: "Responding to RFEs",
+      },
+      {
+        title: "Appeal the Case",
+      },
+      {
+        title: "Proactive Legal Protection",
+      },
+    ],
+  },
+  plan3: {
+    description: [
+      {
+        title: "Unlimited Legal Advice",
+      },
+      {
+        title: "Unlimited Documents Review",
+      },
+      {
+        title: "Writing Business Plan ($1000) ",
+      },
+      {
+        title: "Establishing a US Company ($1500)",
+      },
+      {
+        title: "Filing the Case",
+      },
+      {
+        title: "Inquiries from USCIS and NVC",
+      },
+      {
+        title: "Strategic Guidence in Your Case",
+      },
+      {
+        title: "Responding to RFEs",
+      },
+      {
+        title: "Appeal the Case",
+      },
+      {
+        title: "Proactive Legal Protection",
+      },
+    ],
+  },
+};

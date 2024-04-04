@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import StripeCheckout from "react-stripe-checkout";
 import checkIco from "@/assets/images/checkIco.svg";
 import Image from "next/image";
+import { checkout } from "@/checkout";
 
 const CorporationPlan = () => {
   const plan1 = {
@@ -104,15 +104,11 @@ const CorporationPlan = () => {
                       </div>
                     </div>
                   ))}
-                  <StripeCheckout
-                    name='Lexim Law'
-                    token={onToken}
-                    stripeKey={process.env.NEXT_PUBLIC_STRIPE_PRIVATE_KEY}
-                    amount={25 * 100}
-                    currency='USD'
-                  >
-                    <button className='enroll'>Enroll Now</button>
-                  </StripeCheckout>
+                    <button className='enroll' onClick={()=>{
+                      checkout({
+                        lineItems:[{price:'price_1Oze2SRpSBYSRDXFnL4PHSAg',quantity:1}]
+                      })
+                    }}>Enroll Now</button>
                 </div>
               </div>
             </div>
@@ -135,15 +131,11 @@ const CorporationPlan = () => {
                       </div>
                     </div>
                   ))}
-                  <StripeCheckout
-                    name='Lexim Law'
-                    token={onToken}
-                    stripeKey={process.env.NEXT_PUBLIC_STRIPE_PRIVATE_KEY}
-                    amount={79 * 100}
-                    currency='USD'
-                  >
-                    <button className='enroll'>Enroll Now</button>
-                  </StripeCheckout>
+                  <button className='enroll' onClick={()=>{
+                      checkout({
+                        lineItems:[{price:'price_1P01zmRpSBYSRDXFZvvP1qif',quantity:1}]
+                      })
+                    }}>Enroll Now</button>
                 </div>
               </div>
             </div>
@@ -166,15 +158,11 @@ const CorporationPlan = () => {
                       </div>
                     </div>
                   ))}
-                  <StripeCheckout
-                    name='Lexim Law'
-                    token={onToken}
-                    stripeKey={process.env.NEXT_PUBLIC_STRIPE_PRIVATE_KEY}
-                    amount={199 * 100}
-                    currency='USD'
-                  >
-                    <button className='enroll'>Enroll Now</button>
-                  </StripeCheckout>
+                  <button className='enroll' onClick={()=>{
+                      checkout({
+                        lineItems:[{price:'price_1P020zRpSBYSRDXF4mZY4BCs',quantity:1}]
+                      })
+                    }}>Enroll Now</button>
                 </div>
               </div>
             </div>

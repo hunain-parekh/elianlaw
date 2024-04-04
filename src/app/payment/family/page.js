@@ -284,7 +284,7 @@ const FamilyPayment = () => {
                       </div>
                       <div className='text-center mt-4'>
                         <StripeCheckout
-                          name='Lexim Law'
+                          name='My Immigration Hub'
                           token={onToken}
                           stripeKey={process.env.NEXT_PUBLIC_STRIPE_PRIVATE_KEY}
                           amount={249 * 100}
@@ -311,7 +311,7 @@ const FamilyPayment = () => {
                                 <Image src={checkIco} alt='' />
                               </div>
                               <div>
-                                f <div className='title'>{item?.title}</div>
+                                <div className='title'>{item?.title}</div>
                                 <div className='detail'>{item?.desc}</div>
                               </div>
                             </div>
@@ -320,7 +320,7 @@ const FamilyPayment = () => {
                       </div>
                       <div className='text-center mt-4'>
                         <StripeCheckout
-                          name='Lexim Law'
+                          name='My Immigration Hub'
                           token={onToken}
                           stripeKey={process.env.NEXT_PUBLIC_STRIPE_PRIVATE_KEY}
                           amount={166 * 100}
@@ -396,7 +396,7 @@ const FamilyPayment = () => {
                       </div>
                       <div className='text-center mt-4'>
                         <StripeCheckout
-                          name='Lexim Law'
+                          name='My Immigration Hub'
                           token={onToken}
                           stripeKey={process.env.NEXT_PUBLIC_STRIPE_PRIVATE_KEY}
                           amount={499 * 100}
@@ -433,7 +433,7 @@ const FamilyPayment = () => {
                       </div>
                       <div className='text-center mt-4'>
                         <StripeCheckout
-                          name='Lexim Law'
+                          name='My Immigration Hub'
                           token={onToken}
                           stripeKey={process.env.NEXT_PUBLIC_STRIPE_PRIVATE_KEY}
                           amount={599 * 100}
@@ -470,7 +470,7 @@ const FamilyPayment = () => {
                       </div>
                       <div className='text-center mt-4'>
                         <StripeCheckout
-                          name='Lexim Law'
+                          name='My Immigration Hub'
                           token={onToken}
                           stripeKey={process.env.NEXT_PUBLIC_STRIPE_PRIVATE_KEY}
                           amount={333 * 100}
@@ -549,7 +549,7 @@ const FamilyPayment = () => {
                       </div>
                       <div className='text-center mt-4'>
                         <StripeCheckout
-                          name='Lexim Law'
+                          name='My Immigration Hub'
                           token={onToken}
                           stripeKey={process.env.NEXT_PUBLIC_STRIPE_PRIVATE_KEY}
                           amount={333 * 100}
@@ -585,7 +585,7 @@ const FamilyPayment = () => {
                       </div>
                       <div className='text-center mt-4'>
                         <StripeCheckout
-                          name='Lexim Law'
+                          name='My Immigration Hub'
                           token={onToken}
                           stripeKey={process.env.NEXT_PUBLIC_STRIPE_PRIVATE_KEY}
                           amount={499 * 100}
@@ -665,7 +665,7 @@ const FamilyPayment = () => {
                       </div>
                       <div className='text-center mt-4'>
                         <StripeCheckout
-                          name='Lexim Law'
+                          name='My Immigration Hub'
                           token={onToken}
                           stripeKey={process.env.NEXT_PUBLIC_STRIPE_PRIVATE_KEY}
                           amount={1100 * 100}
@@ -703,7 +703,7 @@ const FamilyPayment = () => {
                       </div>
                       <div className='text-center mt-4'>
                         <StripeCheckout
-                          name='Lexim Law'
+                          name='My Immigration Hub'
                           token={onToken}
                           stripeKey={process.env.NEXT_PUBLIC_STRIPE_PRIVATE_KEY}
                           amount={1300 * 100}
@@ -741,7 +741,7 @@ const FamilyPayment = () => {
                       </div>
                       <div className='text-center mt-4'>
                         <StripeCheckout
-                          name='Lexim Law'
+                          name='My Immigration Hub'
                           token={onToken}
                           stripeKey={process.env.NEXT_PUBLIC_STRIPE_PRIVATE_KEY}
                           amount={1500 * 100}

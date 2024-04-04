@@ -69,7 +69,7 @@ const WorkPayment = () => {
                       </div>
                       <div className='text-center mt-4'>
                         <StripeCheckout
-                          name='Lexim Law'
+                          name='My Immigration Hub'
                           token={onToken}
                           stripeKey={process.env.NEXT_PUBLIC_STRIPE_PRIVATE_KEY}
                           amount={266 * 100}
@@ -108,7 +108,7 @@ const WorkPayment = () => {
                       </div>
                       <div className='text-center mt-4'>
                         <StripeCheckout
-                          name='Lexim Law'
+                          name='My Immigration Hub'
                           token={onToken}
                           stripeKey={process.env.NEXT_PUBLIC_STRIPE_PRIVATE_KEY}
                           amount={266 * 100}
@@ -169,7 +169,7 @@ const WorkPayment = () => {
                   <div className='col-lg-4 col-md-6 mb-4'>
                     <div className='planCardMain'>
                       <div className='planCard'>
-                        <div className='head'>Plan 1 ( 3 month )</div>
+                        <div className='head'>Plan 1 ( 3 months )</div>
                         <div className='cardMain'>
                           {case2.plan1.description.map((item, key) => (
                             <div
@@ -191,7 +191,7 @@ const WorkPayment = () => {
                       </div>
                       <div className='text-center mt-4'>
                         <StripeCheckout
-                          name='Lexim Law'
+                          name='My Immigration Hub'
                           token={onToken}
                           stripeKey={process.env.NEXT_PUBLIC_STRIPE_PRIVATE_KEY}
                           amount={266 * 100}
@@ -207,7 +207,7 @@ const WorkPayment = () => {
                   <div className='col-lg-4 col-md-6 mb-4'>
                     <div className='planCardMain'>
                       <div className='planCard'>
-                        <div className='head'>Plan 2 ( 3 month )</div>
+                        <div className='head'>Plan 2 ( 6 months )</div>
                         <div className='cardMain'>
                           {case2.plan2.description.map((item, key) => (
                             <div
@@ -229,7 +229,7 @@ const WorkPayment = () => {
                       </div>
                       <div className='text-center mt-4'>
                         <StripeCheckout
-                          name='Lexim Law'
+                          name='My Immigration Hub'
                           token={onToken}
                           stripeKey={process.env.NEXT_PUBLIC_STRIPE_PRIVATE_KEY}
                           amount={266 * 100}
@@ -245,7 +245,7 @@ const WorkPayment = () => {
                   <div className='col-lg-4 col-md-6 mb-4'>
                     <div className='planCardMain'>
                       <div className='planCard'>
-                        <div className='head'>Plan 3 ( 12 month )</div>
+                        <div className='head'>Plan 3 ( 12 months )</div>
                         <div className='cardMain'>
                           {case2.plan3.description.map((item, key) => (
                             <div
@@ -267,7 +267,7 @@ const WorkPayment = () => {
                       </div>
                       <div className='text-center mt-4'>
                         <StripeCheckout
-                          name='Lexim Law'
+                          name='My Immigration Hub'
                           token={onToken}
                           stripeKey={process.env.NEXT_PUBLIC_STRIPE_PRIVATE_KEY}
                           amount={266 * 100}
