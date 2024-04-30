@@ -44,6 +44,9 @@ const Footer = () => {
                 <li>
                   <a href="https://www.instagram.com/myimmigrationhub/"> Instagram</a>
                 </li>
+                <li>
+                  <a href="https://wa.me/+15412213464"> Whatsapp</a>
+                </li>
                 {/* <li>
                   <a href="/"> LinkedIn</a>
                 </li> */}
