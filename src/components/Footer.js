@@ -39,14 +39,14 @@ const Footer = () => {
             <div className="col-lg-3 col-md-4 col-12">
               <ul style={{ textAlign: "left" }}>
                 <li>
-                  <a href="/"> Facebook</a>
+                  <a href="https://www.facebook.com/profile.php?id=61556623144424"> Facebook</a>
                 </li>
                 <li>
-                  <a href="/"> Instagram</a>
+                  <a href="https://www.instagram.com/myimmigrationhub/"> Instagram</a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="/"> LinkedIn</a>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

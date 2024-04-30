@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import { FaFacebookF, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaLinkedin, FaInstagram,FaWhatsapp, FaTelegram } from "react-icons/fa";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -46,16 +46,22 @@ const Contact = () => {
             <p>Our mailing address is:</p>
             <p>152A Charlotte Street,</p>
             <p>Peterborough ON</p>
-            <p>Phone:234-451-3453</p>
+            <p>Phone: +1 (541) 221-3464</p>
             <div className="socialIcons">
-              <Link href='your_facebook_link'>
+              <Link href='https://www.facebook.com/profile.php?id=61556623144424'>
                 <FaFacebookF size={30} color="black"/>
               </Link>
-              <Link href='your_linkedin_link'>
+              {/* <Link href='your_linkedin_link'>
                 <FaLinkedin size={30} color="black"/>
-              </Link>
-              <Link href='your_instagram_link'>
+              </Link> */}
+              <Link href='https://www.instagram.com/myimmigrationhub/'>
                 <FaInstagram  size={30} color="black"/>
+              </Link>
+              <Link href='https://wa.me/+15412213464'>
+                <FaWhatsapp  size={30} color="black"/>
+              </Link>
+              <Link href='https://www.instagram.com/myimmigrationhub/'>
+                <FaTelegram  size={30} color="black"/>
               </Link>
             </div>
           </div>
